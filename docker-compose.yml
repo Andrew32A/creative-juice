@@ -1,0 +1,18 @@
+  version: '3.7'
+
+  services:
+    db:
+      image: mongo
+      ports:
+      - "27018:27018"
+      command: mongod --port 27018 --bind_ip_all
+    web:
+      build: .
+      container_name: creative-juice
+      volumes:
+        - .:/app
+        - /app/node_modules 
+      ports:
+        - "3000:3000"
+      depends_on:
+        - db
