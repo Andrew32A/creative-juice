@@ -4,6 +4,10 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
 const UserSchema = new Schema({
+  Email: {
+    type:String,
+    required: true,
+  },
   Username: {
     type: String,
     required: true,
