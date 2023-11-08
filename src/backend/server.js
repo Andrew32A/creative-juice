@@ -1,12 +1,10 @@
 /* eslint-disable new-cap */
-require('mongoose');
-require('dotenv').config();
+import accountsRouter from './routes/accounts.js'
+import express from "express";
+import mongoose from "mongoose";
+import "dotenv/config";
 
-const express = require('express');
-const { default: mongoose } = require('mongoose');
-const app = express();
-const server = require('http').Server(app);
-
+const app = express();  
 // Database
 mongoose
   .connect(process.env.MONGO_URI)
@@ -19,10 +17,10 @@ mongoose
 
 app.use(express.urlencoded({extended: false}));
 
-// controllers
+app.use("/api/", [accountsRouter])
 
-server.listen('3000', () => {
+app.listen('3000', () => {
   console.log('Server listening on Port 3000');
 });
 
-module.exports = app;
+export default app;
