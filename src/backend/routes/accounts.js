@@ -9,6 +9,6 @@ router.use("/accounts", router);
 router.get("/", getUsers);
 router.get("/:id", getUserById);
 router.put("/update/:id", updateUser);
-router.delete("/delete:id", deleteUser);
+router.delete("/delete/:id", deleteUser);
 
 export default router;
