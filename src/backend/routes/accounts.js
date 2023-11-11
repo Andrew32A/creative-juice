@@ -1,14 +1,20 @@
 import Express from "express";
 import { deleteUser, getUserById, getUsers, updateUser } from '../Controllers/users/profile.js';
+import { checkAuth } from "../middleware/checkAuth.js";
+import { login, register } from "../Controllers/users/auth.js";
 
 const router = Express.Router();
 
 router.use("/accounts", router);
 
+//User registration routes
+router.post("/accounts/register", register);
+router.post("/accounts/login", login);
+
 //User CRUD routes
 router.get("/", getUsers);
 router.get("/:id", getUserById);
-router.put("/update/:id", updateUser);
-router.delete("/delete/:id", deleteUser);
+router.put("/update/:id", checkAuth, updateUser);
+router.delete("/delete/:id", checkAuth, deleteUser);
 
 export default router;
