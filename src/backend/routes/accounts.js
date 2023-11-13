@@ -1,15 +1,16 @@
 import Express from "express";
 import { deleteUser, getUserById, getUsers, updateUser } from '../Controllers/users/profile.js';
 import { checkAuth } from "../middleware/checkAuth.js";
-import { login, register } from "../Controllers/users/auth.js";
+import { login, logout, register } from "../Controllers/users/auth.js";
 
 const router = Express.Router();
 
 router.use("/accounts", router);
 
 //User registration routes
-router.post("/accounts/register", register);
-router.post("/accounts/login", login);
+router.post("/register", register);
+router.post("/login", login);
+router.post("/logout", checkAuth, logout);
 
 //User CRUD routes
 router.get("/", getUsers);
