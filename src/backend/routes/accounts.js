@@ -13,7 +13,7 @@ router.post("/login", login);
 router.post("/logout", checkAuth, logout);
 
 //User CRUD routes
-router.get("/", getUsers);
+router.get("/all", getUsers);
 router.get("/:id", getUserById);
 router.put("/update/:id", checkAuth, updateUser);
 router.delete("/delete/:id", checkAuth, deleteUser);

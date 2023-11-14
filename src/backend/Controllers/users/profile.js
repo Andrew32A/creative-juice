@@ -17,20 +17,6 @@ export const getUserById = async (req, res, next) => {
   }
 };
 
-export const getUser = async (req, res, next) => {
-  try {
-    const user = await User.findById(req.user.id).select(
-      "username posts"
-    );
-    return res.status(200).json({
-      user,
-    });
-  }
-  catch (err) {
-    next(err);
-  }
-};
-
 export const getUsers = async (req, res, next) => {
   try {
     const users = await User.find();
@@ -98,7 +84,7 @@ export const updateUser = async (req, res, next) => {
 
 export const deleteUser = async (req, res, next) => {
   try {
-    await User.findByIdAndDelete(req.user.id);
+    await User.findByIdAndDelete(req.params.id);
 
     res.status(200).json({
       success: true,
