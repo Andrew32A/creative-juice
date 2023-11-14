@@ -1,5 +1,6 @@
 /* eslint-disable new-cap */
 import accountsRouter from './routes/accounts.js'
+import promptRouter from './routes/prompts.js'
 import express from "express";
 import mongoose from "mongoose";
 import "dotenv/config";
@@ -22,7 +23,7 @@ app.use(express.urlencoded({extended: false}));
 
 app.use(cookieParser());
 
-app.use("/api/", [accountsRouter])
+app.use("/api", [accountsRouter, promptRouter]);
 
 app.listen('3000', () => {
   console.log('Server listening on Port 3000');
