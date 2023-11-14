@@ -4,15 +4,15 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
 const UserSchema = new Schema({
-  Email: {
+  email: {
     type:String,
     required: true,
   },
-  Username: {
+  username: {
     type: String,
     required: true,
   },
-  Password: {
+  password: {
     type: String,
     required: true,
   },
@@ -20,7 +20,7 @@ const UserSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'Post',
   }],
-  notificationPrefrences: {
+  notificationPreferences: {
     push: {
       type: Boolean,
       default: false,
