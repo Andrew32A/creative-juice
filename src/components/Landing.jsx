@@ -3,7 +3,7 @@ import Logo from '../images/cj-logo.jpg';
 
 const Home = () => {
   return (
-    <div name='home' className="w-full h-screen bg-[#f1f1f1]">
+    <div name='home' className="w-full h-screen bg-[#F2E2C4]">
 
       {/* container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
@@ -17,9 +17,9 @@ const Home = () => {
             <div style={{ display: 'flex', alignItems: 'center' }}>
             <input
               type="text"
-              className="border-2 px-4 py-2 my-1 rounded-md"
+              className="border-[#003000] border-2 px-4 py-2 my-1"
               placeholder="Enter Email Here"/>
-            <button className="text-black group border-2 px-4 py-2 my-1 flex items-center bg-[#a8e6cf] hover:bg-[#ffaaa5] hover:border-[#003000] rounded-md">Get The Juice!</button>
+            <button className="text-black group border-[#003000] border-2 px-4 py-2 my-1 flex items-center bg-[#BBF2E2] hover:bg-[#F2A7CA]">Get The Juice!</button>
             </div>
             <div className="flex justify-between space-x-4 font-mogra px-3 mt-4">
               <h2>27 M</h2>

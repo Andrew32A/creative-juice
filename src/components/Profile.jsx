@@ -3,8 +3,8 @@ import Placeholder from '../images/placeholder.jpg'
 
 const Profile = () => {
   return (
-    <div style={{ fontFamily: 'Mogra, sans-serif', backgroundColor: '#f1f1f1' }}>
-    <div className="flex items-center justify-center h-screen">
+    <div style={{ fontFamily: 'Mogra, sans-serif', backgroundColor: '#F2E2C4' }}>
+    <div className="flex items-center justify-center h-screen m-10">
       <div className="bg-white p-8 shadow-md rounded-md">
         <h2 className="text-2xl font-bold mb-6">Username</h2>
         <div className="flex items-center space-x-4 mb-6">
@@ -36,13 +36,13 @@ const Profile = () => {
   {/* Artwork Shared */}
   <div className="text-center mt-8 mb-3"> 
         <h1 className="text-5xl mb-8">Artwork Shared:</h1>
-        <div className="flex flex-wrap justify-center bg-[#f1f1f1]">
-          <div className="flex space-x-4 mb-3 pb-2">
+        <div className="flex flex-wrap justify-center bg-[#f1f1f1] m-10 rounded-md">
+          <div className="flex space-x-4 mb-3 pb-2 mt-10">
             <img className="w-64 h-64 object-cover rounded-md" src={Placeholder} alt="Artwork 1" />
             <img className="w-64 h-64 object-cover rounded-md" src={Placeholder} alt="Artwork 2" />
             <img className="w-64 h-64 object-cover rounded-md" src={Placeholder} alt="Artwork 3" />
           </div>
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 mb-10">
             <img className="w-64 h-64 object-cover rounded-md" src={Placeholder} alt="Artwork 4" />
             <img className="w-64 h-64 object-cover rounded-md" src={Placeholder} alt="Artwork 5" />
             <img className="w-64 h-64 object-cover rounded-md" src={Placeholder} alt="Artwork 6" />

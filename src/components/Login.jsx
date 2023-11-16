@@ -3,10 +3,10 @@ import Logo from '../images/cj-logo.jpg'
 
 const Login = () => {
   return (
-  <div style={{ fontFamily: 'Mogra, sans-serif', backgroundColor: '#f1f1f1' }}>
+  <div style={{ fontFamily: 'Mogra, sans-serif', backgroundColor: '#F2E2C4' }}>
     <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-        <img className="mx-auto h-10 w-auto" src={Logo} alt="Your Company" />
+        <img className="w-[3em] mx-auto" src={Logo} alt="Your Company" />
         <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Sign in to your account</h2>
       </div>
 
