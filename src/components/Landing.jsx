@@ -1,5 +1,4 @@
 import React from "react";
-// import Placeholder from '../assets/placeholder.jpg'
 import Logo from '../images/cj-logo.jpg';
 
 const Home = () => {
@@ -20,7 +19,7 @@ const Home = () => {
               type="text"
               className="border-2 px-4 py-2 my-1 rounded-md"
               placeholder="Enter Email Here"/>
-            <button className="text-black group border-2 px-4 py-2 my-1 flex items-center hover:bg-[#a8e6cf] hover:border-[#ffaaa5] rounded-md">Get The Juice!</button>
+            <button className="text-black group border-2 px-4 py-2 my-1 flex items-center bg-[#a8e6cf] hover:bg-[#ffaaa5] hover:border-[#003000] rounded-md">Get The Juice!</button>
             </div>
             <div className="flex justify-between space-x-4 font-mogra px-3 mt-4">
               <h2>27 M</h2>
@@ -33,11 +32,8 @@ const Home = () => {
               <h2>Creatives</h2>
             </div>
           </div>
-          {/* <div>
-          <img className="w-[350px] mx-auto mt-2 px-3" src={Placeholder} alt="/" aria-label="placeholder image" />
-          </div> */}
           <div>
-          <img className="w-[350px] mx-auto mt-1 ml-3" src={Logo} alt="/" aria-label="placeholder image" />
+          <img className="w-[250px] mx-auto mt-1 ml-3" src={Logo} alt="/" aria-label="placeholder image" />
           </div>          
         </div>
         <div style={{ textAlign: 'center', fontFamily: 'Mogra, sans-serif', marginTop: '50px' }}>

@@ -6,6 +6,7 @@ import Prompt from './components/Prompt.jsx';
 import About from './components/About.jsx';
 import Login from './components/Login.jsx';
 import Profile from './components/Profile.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Login />
       <Profile />
+      <Footer />
     </div>
   );
 }
