@@ -1,5 +1,5 @@
 import React from 'react';
-import Placeholder from '../assets/placeholder.jpg';
+import Placeholder from '../images/placeholder.jpg'
 
 const Profile = () => {
   return (
@@ -33,20 +33,24 @@ const Profile = () => {
         </div>
       </div>
     </div>
-    <div className="flex items-center justify-center h-screen flex-col text-center">
-  <h1 className='text-5xl mb-6'>Artwork Shared:</h1>
-  <div className="flex flex-wrap justify-center bg-[#f1f1f1]">
-    <div className="flex space-x-4 mb-3 pb-2">
-      <img className="" style={{ width: '350px', height: '360px' }} src={Placeholder} alt="/" aria-label="placeholder image" />
-      <img className="" style={{ width: '350px', height: '360px' }} src={Placeholder} alt="/" aria-label="placeholder image" />
-    </div>
-    <div className="flex space-x-4">
-      <img className="" style={{ width: '350px', height: '360px' }} src={Placeholder} alt="/" aria-label="placeholder image" />
-      <img className="" style={{ width: '350px', height: '360px' }} src={Placeholder} alt="/" aria-label="placeholder image" />
-    </div>
-  </div>
+  {/* Artwork Shared */}
+  <div className="text-center mt-8 mb-3"> 
+        <h1 className="text-5xl mb-8">Artwork Shared:</h1>
+        <div className="flex flex-wrap justify-center bg-[#f1f1f1]">
+          <div className="flex space-x-4 mb-3 pb-2">
+            <img className="w-64 h-64 object-cover rounded-md" src={Placeholder} alt="Artwork 1" />
+            <img className="w-64 h-64 object-cover rounded-md" src={Placeholder} alt="Artwork 2" />
+            <img className="w-64 h-64 object-cover rounded-md" src={Placeholder} alt="Artwork 3" />
+          </div>
+          <div className="flex space-x-4">
+            <img className="w-64 h-64 object-cover rounded-md" src={Placeholder} alt="Artwork 4" />
+            <img className="w-64 h-64 object-cover rounded-md" src={Placeholder} alt="Artwork 5" />
+            <img className="w-64 h-64 object-cover rounded-md" src={Placeholder} alt="Artwork 6" />
+          </div>
+        </div>
+      </div>
 </div>
-</div>
+
   );
 }
 
