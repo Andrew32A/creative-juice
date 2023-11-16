@@ -2,7 +2,11 @@ import {Schema, model} from "mongoose";
 
 // The schema for drawing prompts
 const PromptSchema = new Schema({
-  prompt: {
+  base: {
+    type: String,
+    required: true,
+  },
+  stretch: {
     type: String,
     required: true,
   },

@@ -3,14 +3,15 @@ import Prompt from "../Models/prompt.js";
 // Creating Prompt
 export const createPrompt = async (req, res, next) => {
   try {
-    const {prompt, dateUsed} = req.body;
+    const {base, stretch, dateUsed} = req.body;
     const fields = {
-      prompt,
+      base,
+      stretch,
       dateUsed,
     };
     
     // Finding the prompt
-    const foundPrompt = await Prompt.findOne({prompt});
+    const foundPrompt = await Prompt.findOne({base});
     
     // If there's a prompt return message
     if (foundPrompt) {
@@ -18,15 +19,15 @@ export const createPrompt = async (req, res, next) => {
     }
 
     // Prompt schema object to be stored in the database
-    const newPrompt = new Prompt(fields);
+    const prompt = new Prompt(fields);
 
     // Save Prompt
-    await newPrompt.save();
+    await prompt.save();
 
     // Return JSON status 
     return res.status(200).json({
       success: 'true',
-      message: `Prompt: ${newPrompt.id} created!`
+      message: `Prompt: ${prompt.id} created!`
     });
   }
   // Display Error
@@ -117,8 +118,8 @@ export const deletePrompt = async (req, res, next) => {
       message: "Prompt deleted",
     });
   } catch (err) {
-    res.status(400).
-  json({message: err});
+    res.status(400)
+      .json({message: err});
     next(err);
   }
 };
