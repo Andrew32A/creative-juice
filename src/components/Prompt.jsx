@@ -12,7 +12,7 @@ const Prompt = () => {
   };
 
   return (
-    <div className='bg-[#f1f1f1] flex items-center justify-center h-screen'>
+    <div className='bg-[#F2E2C4] flex items-center justify-center h-screen'>
       {/* yellow post-it */}
       <div className="bg-yellow-300 p-6 shadow-md mr-2 mx-7" style={postItStyle}>
         <h1 className="font-bold mb-2" style={customFontSize}>DRAW:</h1>
