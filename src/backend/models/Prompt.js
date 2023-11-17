@@ -12,7 +12,7 @@ const PromptSchema = new Schema({
   },
   dateUsed: {
     type: Date,
-    default: '0000-00-00',
+    default: new Date('January 1, 0001'),
   },
   posts: [{
     type: Schema.ObjectId,

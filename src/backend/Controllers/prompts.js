@@ -71,9 +71,9 @@ export const getPrompts = async (req, res, next) => {
 // Updates prompt
 export const updatePrompt = async (req, res, next) => {
   try {
-    const {prompt, dateUsed, posts} = req.body;   // Goes to the body and look for required fields
+    const {base, stretch, dateUsed, posts} = req.body;   // Goes to the body and look for required fields
     const fields = {
-      prompt,
+      base, stretch,
       dateUsed,
       posts
     };
@@ -112,7 +112,7 @@ export const updatePrompt = async (req, res, next) => {
 
 export const deletePrompt = async (req, res, next) => {
   try {
-    await prompt.findByIdAndDelete(req.params.id);
+    await Prompt.findByIdAndDelete(req.params.id);
     res.status(200).json({
       success: true,
       message: "Prompt deleted",
