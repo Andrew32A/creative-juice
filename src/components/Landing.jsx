@@ -17,9 +17,12 @@ const Home = () => {
             <div style={{ display: 'flex', alignItems: 'center' }}>
             <input
               type="text"
-              className="border-[#003000] border-2 px-4 py-2 my-1"
-              placeholder="Enter Email Here"/>
-            <button className="text-black group border-[#003000] border-2 px-4 py-2 my-1 flex items-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">Get The Juice!</button>
+              className="border-[#003000] border-2 px-4 py-2 my-1 z-10"
+              placeholder="Enter Email Here" />
+            <button 
+              className="text-black group border-[#003000] border-2 px-4 py-2 my-1 ml-[-2px] flex items-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out z-20">
+              Get The Juice!
+            </button>
             </div>
             <div className="flex justify-between space-x-4 font-mogra px-3 mt-4">
               <h2>27 M</h2>
