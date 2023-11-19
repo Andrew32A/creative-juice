@@ -44,7 +44,6 @@ const NavBar = () => {
                     <li><Link to="/" className="hover:text-green-400 transition duration-300 ease-in-out">Home</Link></li>
                     <li><Link to="/about" className="hover:text-green-400 transition duration-300 ease-in-out">About</Link></li>
                     <li><Link to="/prompt" className="hover:text-green-400 transition duration-300 ease-in-out">Prompt</Link></li>
-                    <li><Link to="/content" className="hover:text-green-400 transition duration-300 ease-in-out">Content</Link></li>
                     <li><Link to="/login" className="hover:text-green-400 transition duration-300 ease-in-out">Login</Link></li>
                     <li><Link to="/profile" className="hover:text-green-400 transition duration-300 ease-in-out">Profile</Link></li>
                     <li><Link to="/contact" className="hover:text-green-400 transition duration-300 ease-in-out">Contact</Link></li>
