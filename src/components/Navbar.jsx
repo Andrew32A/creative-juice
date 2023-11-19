@@ -35,7 +35,7 @@ const NavBar = () => {
 
     return (
         <div style={{ fontFamily: 'Mogra, sans-serif' }}>
-            <div className={`fixed w-full flex justify-between items-center px-4 transition-all duration-500 ease-in-out ${isScrolled ? 'bg-opacity-80 backdrop-blur-sm shadow-lg' : 'bg-[#F2E2C4]'} text-[#fcf8c1] ${hideHeader ? '-top-32' : 'top-0'}`}>
+            <div className={`z-50 fixed w-full flex justify-between items-center px-4 transition-all duration-500 ease-in-out ${isScrolled ? 'bg-opacity-80 backdrop-blur-sm shadow-lg' : 'bg-[#F2E2C4]'} text-[#fcf8c1] ${hideHeader ? '-top-32' : 'top-0'}`}>
                 <div className="flex items-center">
                     <img src={Logo} alt="" style={{ width: '50px' }} />
                 </div>
@@ -44,7 +44,6 @@ const NavBar = () => {
                     <li><Link to="/" className="hover:text-green-400 transition duration-300 ease-in-out">Home</Link></li>
                     <li><Link to="/about" className="hover:text-green-400 transition duration-300 ease-in-out">About</Link></li>
                     <li><Link to="/prompt" className="hover:text-green-400 transition duration-300 ease-in-out">Prompt</Link></li>
-                    <li><Link to="/content" className="hover:text-green-400 transition duration-300 ease-in-out">Content</Link></li>
                     <li><Link to="/login" className="hover:text-green-400 transition duration-300 ease-in-out">Login</Link></li>
                     <li><Link to="/profile" className="hover:text-green-400 transition duration-300 ease-in-out">Profile</Link></li>
                     <li><Link to="/contact" className="hover:text-green-400 transition duration-300 ease-in-out">Contact</Link></li>
