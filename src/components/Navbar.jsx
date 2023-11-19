@@ -35,7 +35,7 @@ const NavBar = () => {
 
     return (
         <div style={{ fontFamily: 'Mogra, sans-serif' }}>
-            <div className={`fixed w-full flex justify-between items-center px-4 transition-all duration-500 ease-in-out ${isScrolled ? 'bg-opacity-80 backdrop-blur-sm shadow-lg' : 'bg-[#F2E2C4]'} text-[#fcf8c1] ${hideHeader ? '-top-32' : 'top-0'}`}>
+            <div className={`z-50 fixed w-full flex justify-between items-center px-4 transition-all duration-500 ease-in-out ${isScrolled ? 'bg-opacity-80 backdrop-blur-sm shadow-lg' : 'bg-[#F2E2C4]'} text-[#fcf8c1] ${hideHeader ? '-top-32' : 'top-0'}`}>
                 <div className="flex items-center">
                     <img src={Logo} alt="" style={{ width: '50px' }} />
                 </div>

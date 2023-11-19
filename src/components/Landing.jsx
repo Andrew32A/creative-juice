@@ -1,8 +1,46 @@
-import React from "react";
+import React, { useEffect } from 'react';
+import anime from 'animejs';
+import ScrollReveal from 'scrollreveal';
 import Logo from '../images/cj-logo.jpg';
 import Content from "./Content.jsx";
 
 const Home = () => {
+  useEffect(() => {
+    // anime({
+    //   targets: "h1, p, button, input", // Adjust targets to your elements
+    //   translateX: [-50, 0],
+    //   opacity: [0, 1],
+    //   easing: "easeOutExpo",
+    //   duration: 1200,
+    //   delay: anime.stagger(100, { start: 1000 }),
+    // });
+
+    const sr = ScrollReveal({
+      distance: "60px",
+      duration: 1500,
+      easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+      reset: false,
+    });
+    
+    sr.reveal('p', { 
+      origin: 'top', 
+      interval: 200, 
+      delay: 200
+    });
+    
+    sr.reveal('.email-input', { 
+      origin: 'left', 
+      interval: 200, 
+      delay: 1200
+    });
+    
+    sr.reveal('img', { 
+      origin: 'right', 
+      interval: 200,
+      delay: 400
+    });
+    
+  }, []);
   return (
     <>
       <div name='home' className="w-full h-screen bg-[#F2E2C4] flex justify-center items-center">
@@ -11,7 +49,7 @@ const Home = () => {
             <div style={{ fontFamily: 'DM Sans, sans-serif' }}>
               <h1 style={{ fontFamily: 'Mogra, sans-serif' }} className="text-4xl sm:text-7xl font-bold text-[#003000]">Creative Juice!</h1>
               <p className="text-[#8892b0] py-4 max-w-[700px]">Get <span className="font-bold text-[#000]">one creative writing prompt</span> in your inbox every day. Reply with your writing to see what others created for the same prompt. Juicy.</p>
-              <div style={{ display: 'flex', alignItems: 'center' }}>
+              <div className='email-input' style={{ display: 'flex', alignItems: 'center' }}>
                 <input
                   type="text"
                   className="border-[#003000] border-2 px-4 py-2 my-1 z-10"
