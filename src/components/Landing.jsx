@@ -1,9 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import ScrollReveal from 'scrollreveal';
 import Logo from '../images/cj-logo.jpg';
 import Content from "./Content.jsx";
 
 const Home = () => {
+  const [arrowPosition, setArrowPosition] = useState({});
+  const [showArrow, setShowArrow] = useState(true);
+
   useEffect(() => {
     // anime({
     //   targets: "h1, p, button, input", // Adjust targets to your elements
@@ -23,18 +26,48 @@ const Home = () => {
       interval: 200, 
       delay: 200
     });
-    
-    sr.reveal('.email-input-wrapper, .email-subtext', { 
-      origin: 'left', 
-      interval: 0, 
-      delay: 1200
+
+    sr.reveal('.arrow', { 
+      origin: 'top', 
+      interval: 200, 
+      delay: 2500
     });
     
     sr.reveal('.img-wrapper img', { 
       origin: 'right', 
       interval: 200,
       delay: 400
-    });    
+    });
+
+    sr.reveal('.email-input-wrapper, .email-subtext', { 
+      origin: 'left', 
+      interval: 0, 
+      delay: 1200
+    });
+
+    const updateArrowPosition = () => {
+      const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+      setArrowPosition({ 
+        bottom: vh * 0.1 + 'px', 
+        left: '50%', 
+        transform: 'translateX(-50%)' 
+      });
+    };
+
+    const handleScroll = () => {
+      // how far user needs to scroll to make arrow disappear
+      // disabled for now to figure out smoother transition
+      // setShowArrow(window.scrollY < 50);
+    };
+
+    updateArrowPosition();
+    window.addEventListener('resize', updateArrowPosition);
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('resize', updateArrowPosition);
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (
@@ -62,9 +95,14 @@ const Home = () => {
             </div>
           </div>
           <div style={{ textAlign: 'center', fontFamily: 'Mogra, sans-serif', marginTop: '50px' }}>
-            <h2>See What Juicers Made!</h2>
+            {/* <h2>See What Juicers Made!</h2>
             <h3>Share What You Created to Unlock Access.</h3>
-            <h3>All Art is Anonymous!</h3>
+            <h3>All Art is Anonymous!</h3> */}
+            {showArrow && (
+              <div className="arrow" style={{ position: 'absolute', ...arrowPosition }}>
+                <i className="ri-arrow-down-s-line text-6xl"></i>
+              </div>
+            )}
           </div>
         </div>
       </div>
