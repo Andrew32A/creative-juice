@@ -52,9 +52,9 @@ const NavBar = () => {
     return (
         <div style={{ fontFamily: 'Mogra, sans-serif' }}>
             <div className={`z-50 fixed w-full flex justify-between items-center px-4 transition-all duration-500 ease-in-out ${isScrolled ? 'bg-opacity-80 backdrop-blur-sm shadow-lg' : 'bg-[#F2E2C4]'} text-[#fcf8c1] ${hideHeader ? '-top-32' : 'top-0'}`}>
-                <div className="flex items-center">
-                    <img src={Logo} alt="" style={{ width: '50px' }} />
-                </div>
+                <Link className="flex items-center" to="/">
+                    <img src={Logo} alt="" style={{ width: '50px' }}/>
+                </Link>
 
                 <ul className="nav-wrapper hidden md:flex space-x-4 text-pink-300">
                     <li><Link to="/" className="hover:text-green-400 transition duration-300 ease-in-out">Home</Link></li>
