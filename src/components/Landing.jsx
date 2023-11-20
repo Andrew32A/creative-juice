@@ -36,14 +36,14 @@ const Home = () => {
       delay: 400
     });    
   }, []);
-  
+
   return (
     <>
       <div name='home' className="w-full h-screen bg-[#F2E2C4] flex justify-center items-center">
         <div className="max-w-[1000px] px-8">
           <div className="flex flex-col sm:flex-row justify-between items-center">
             <div style={{ fontFamily: 'DM Sans, sans-serif' }}>
-              <h1 style={{ fontFamily: 'Mogra, sans-serif' }} className="text-4xl sm:text-7xl font-bold text-[#003000]">Creative Juice!</h1>
+              <h1 style={{ fontFamily: 'Mogra, sans-serif', WebkitTextStrokeWidth: '0.5px', WebkitTextStrokeColor: '#161616' }} className="text-4xl sm:text-7xl drop-shadow-2xl font-bold text-[#f2a7ca]">Creative Juice!</h1>
               <p className="text-[#8892b0] py-4 max-w-[700px]">Get <span className="font-bold text-[#000]">one creative writing prompt</span> in your inbox every day. Reply with your writing to see what others created for the same prompt. Juicy.</p>
               <div className='email-input-wrapper' style={{ display: 'flex', alignItems: 'center' }}>
                 <input
