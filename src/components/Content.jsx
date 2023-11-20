@@ -20,7 +20,7 @@ const Content = () => {
 
   return (
   <div className="text-center mt-8 mb-3" style={{ fontFamily: 'Mogra, sans-serif'}}>
-    <h1 className="text-5xl mb-8">Artwork Shared:</h1>
+    <h1 style={{ WebkitTextStrokeWidth: '0.5px', WebkitTextStrokeColor: '#161616' }} className="text-4xl sm:text-7xl drop-shadow-2xl font-bold mb-8 text-[#BBF2E2]">Artwork Shared:</h1>
     <div className="m-10 shadow-md rounded-md p-10">
       <div className="grid-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 justify-items-center">
         <img className="w-full h-64 object-cover rounded-md" src={Placeholder} alt="Artwork 1" />
