@@ -3,7 +3,7 @@ import Logo from '../images/cj-logo.jpg';
 
 const Login = () => {
   return (
-    <div style={{ fontFamily: 'Mogra, sans-serif', backgroundColor: '#F2E2C4' }}>
+    <div style={{ fontFamily: 'Mogra, sans-serif', backgroundColor: '#F2E2C4' }} className="w-full h-screen bg-[#F2E2C4]">
       <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img className="w-[3em] mx-auto" src={Logo} alt="Your Company" />
