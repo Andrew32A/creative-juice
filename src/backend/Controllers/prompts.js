@@ -1,5 +1,35 @@
 import Prompt from "../Models/prompt.js";
 
+// Asking Daily Prompt
+export const getDailyPrompt = async (req, res, next) => {
+  try {
+    const sevenMonthsMili = 18408600000; // seven months in milliseconds
+    const reuseDate = Date.now() - sevenMonthsMili; // earliest date a prompt can be reused
+
+    const prompts = await Prompt.find().$where(`this.dateUsed <= ${reuseDate}`); // get all prompts older than reuse date
+
+    if (prompts.length === 0) {
+      return res.status(400).json({message: 'there are no prompts that can be used'})
+    }
+
+    const randomIndex = Math.floor(Math.random() * prompts.length);
+    const prompt = prompts[randomIndex]
+
+    prompt.dateUsed = Date.now();
+    prompt.save();
+
+    return res.status(200).json({
+      success: 'true',
+      prompt,
+    });
+  } 
+  // Display Error
+  catch (err) {
+    console.log(err);
+    next(err);
+  }
+};
+
 // Creating Prompt
 export const createPrompt = async (req, res, next) => {
   try {
