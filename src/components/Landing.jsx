@@ -18,7 +18,7 @@ const Home = () => {
       reset: false,
     });
     
-    sr.reveal('p', { 
+    sr.reveal('p, .arrow', { 
       origin: 'top', 
       interval: 200, 
       delay: 200
@@ -65,6 +65,9 @@ const Home = () => {
             <h2>See What Juicers Made!</h2>
             <h3>Share What You Created to Unlock Access.</h3>
             <h3>All Art is Anonymous!</h3>
+            <div className="arrow">
+              <i className="ri-arrow-down-s-line text-6xl"></i>
+            </div>
           </div>
         </div>
       </div>
