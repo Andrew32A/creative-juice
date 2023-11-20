@@ -1,16 +1,47 @@
 import Prompt from "../Models/prompt.js";
 
+// Asking Daily Prompt
+export const getDailyPrompt = async (req, res, next) => {
+  try {
+    const sevenMonthsMili = 18408600000; // seven months in milliseconds
+    const reuseDate = Date.now() - sevenMonthsMili; // earliest date a prompt can be reused
+
+    const prompts = await Prompt.find().$where(`this.dateUsed <= ${reuseDate}`); // get all prompts older than reuse date
+
+    if (prompts.length === 0) {
+      return res.status(400).json({message: 'there are no prompts that can be used'})
+    }
+
+    const randomIndex = Math.floor(Math.random() * prompts.length);
+    const prompt = prompts[randomIndex]
+
+    prompt.dateUsed = Date.now();
+    prompt.save();
+
+    return res.status(200).json({
+      success: 'true',
+      prompt,
+    });
+  } 
+  // Display Error
+  catch (err) {
+    console.log(err);
+    next(err);
+  }
+};
+
 // Creating Prompt
 export const createPrompt = async (req, res, next) => {
   try {
-    const {prompt, dateUsed} = req.body;
+    const {base, stretch, dateUsed} = req.body;
     const fields = {
-      prompt,
+      base,
+      stretch,
       dateUsed,
     };
     
     // Finding the prompt
-    const foundPrompt = await Prompt.findOne({prompt});
+    const foundPrompt = await Prompt.findOne({base});
     
     // If there's a prompt return message
     if (foundPrompt) {
@@ -18,15 +49,15 @@ export const createPrompt = async (req, res, next) => {
     }
 
     // Prompt schema object to be stored in the database
-    const newPrompt = new Prompt(fields);
+    const prompt = new Prompt(fields);
 
     // Save Prompt
-    await newPrompt.save();
+    await prompt.save();
 
     // Return JSON status 
     return res.status(200).json({
       success: 'true',
-      message: `Prompt: ${newPrompt.id} created!`
+      message: `Prompt: ${prompt.id} created!`
     });
   }
   // Display Error
@@ -70,9 +101,9 @@ export const getPrompts = async (req, res, next) => {
 // Updates prompt
 export const updatePrompt = async (req, res, next) => {
   try {
-    const {prompt, dateUsed, posts} = req.body;   // Goes to the body and look for required fields
+    const {base, stretch, dateUsed, posts} = req.body;   // Goes to the body and look for required fields
     const fields = {
-      prompt,
+      base, stretch,
       dateUsed,
       posts
     };
@@ -111,14 +142,14 @@ export const updatePrompt = async (req, res, next) => {
 
 export const deletePrompt = async (req, res, next) => {
   try {
-    await prompt.findByIdAndDelete(req.params.id);
+    await Prompt.findByIdAndDelete(req.params.id);
     res.status(200).json({
       success: true,
       message: "Prompt deleted",
     });
   } catch (err) {
-    res.status(400).
-  json({message: err});
+    res.status(400)
+      .json({message: err});
     next(err);
   }
 };

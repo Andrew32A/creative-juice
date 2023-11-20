@@ -2,13 +2,17 @@ import {Schema, model} from "mongoose";
 
 // The schema for drawing prompts
 const PromptSchema = new Schema({
-  prompt: {
+  base: {
+    type: String,
+    required: true,
+  },
+  stretch: {
     type: String,
     required: true,
   },
   dateUsed: {
     type: Date,
-    default: '0000-00-00',
+    default: new Date('January 1, 0001'),
   },
   posts: [{
     type: Schema.ObjectId,

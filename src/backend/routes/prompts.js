@@ -1,5 +1,5 @@
 import Express from "express";
-import { getPromptById, createPrompt, updatePrompt, deletePrompt, getPrompts } from "../Controllers/prompts.js";
+import { getPromptById, createPrompt, updatePrompt, deletePrompt, getPrompts, getDailyPrompt } from "../Controllers/prompts.js";
 import { checkAuth } from "../middleware/checkAuth.js";
 
 const router = Express.Router();
@@ -7,6 +7,7 @@ const router = Express.Router();
 router.use("/prompts", router);
 
 //Prompt CRUD routes
+router.get('/daily', getDailyPrompt)
 router.post('/new', checkAuth, createPrompt)
 router.get("/all", getPrompts);
 router.get("/:id", getPromptById);

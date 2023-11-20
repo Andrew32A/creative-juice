@@ -56,6 +56,12 @@ export const updateUser = async (req, res, next) => {
       return res.status(400).json({message});
     }
 
+    const isOwner = await User.findOne({_id: req.user.id});
+
+    if (!isOwner) {
+      return res.status(401).json({message: 'you are not authorized to modify this'});
+    }
+
     const selectFields = Object.keys(fields).join(" ");
 
     const user = await User.findByIdAndUpdate(
@@ -84,6 +90,13 @@ export const updateUser = async (req, res, next) => {
 
 export const deleteUser = async (req, res, next) => {
   try {
+
+    const isOwner = await User.findOne({_id: req.user.id});
+
+    if (!isOwner) {
+      return res.status(401).json({message: 'you are not authorized to modify this'});
+    }
+
     await User.findByIdAndDelete(req.params.id);
 
     res.status(200).json({
