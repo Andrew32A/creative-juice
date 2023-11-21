@@ -6,11 +6,14 @@ import Prompt from "../Models/prompt.js";
 export const createPost = async (req, res, next) => {
   try {
     const {title, date, user, prompt} = req.body;
+    console.log(req.file.path);
+    const image = req.file.path;
     const fields = {
       title,
       date,
       user,
       prompt,
+      image,
     };
     
     // Finding the post
