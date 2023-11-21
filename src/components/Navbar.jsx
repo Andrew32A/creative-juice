@@ -56,28 +56,32 @@ const NavBar = () => {
 
                 <ul className="nav-wrapper hidden md:flex space-x-4 text-pink-300">
                     <li style={{ display: 'flex', alignItems: 'center' }}>
-                        <Link to="/" className="nav-link text-black border-[#003000] border-2 px-4 py-1 inline-flex items-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
-                        Home
+                        <Link to="/" className="nav-link text-black border-[#003000] border-2 px-4 py-1 inline-flex items-center justify-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
+                            <i className="ri-home-8-line"></i>
+                            <span className="pl-2">Home</span>
                         </Link>
 
-                        <Link to="/prompt" className="nav-link text-black border-[#003000] border-2 px-4 py-1 ml-[-2px] inline-flex items-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
-                        Prompt
+                        <Link to="/prompt" className="nav-link text-black border-[#003000] border-2 px-4 py-1 ml-[-2px] inline-flex items-center justify-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
+                            <i className="ri-pencil-line"></i>
+                            <span className="pl-2">Prompt</span>
                         </Link>
 
-                        <Link to="/profile" className="nav-link text-black border-[#003000] border-2 px-4 py-1 ml-[-2px] inline-flex items-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
-                        Profile
+                        <Link to="/profile" className="nav-link text-black border-[#003000] border-2 px-4 py-1 ml-[-2px] inline-flex items-center justify-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
+                            <i className="ri-profile-line"></i>
+                            <span className="pl-2">Profile</span>
                         </Link>
                         
-                        <Link to="/login" className="nav-link text-black border-[#003000] border-2 px-4 py-1 ml-[-2px] inline-flex items-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
-                        Login
+                        <Link to="/login" className="nav-link text-black border-[#003000] border-2 px-4 py-1 ml-[-2px] inline-flex items-center justify-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
+                            <i className="ri-login-box-line"></i>
+                            <span className="pl-2">Login</span>
                         </Link>
 
-                        <Link to="/signup" className="nav-link text-black border-[#003000] border-2 px-4 py-1 ml-[-2px] inline-flex items-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
-                        Sign Up
+                        <Link to="/signup" className="nav-link text-black border-[#003000] border-2 px-4 py-1 ml-[-2px] inline-flex items-center justify-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
+                            <i className="ri-login-circle-line"></i>
+                            <span className="pl-2">Sign Up</span>
                         </Link>
                     </li>
                 </ul>
-
                     {/* <li><Link to="/about" className="hover:text-green-400 transition duration-300 ease-in-out">About</Link></li> */}
                     {/* <li><Link to="/contact" className="hover:text-green-400 transition duration-300 ease-in-out">Contact</Link></li> */}
             </div>
