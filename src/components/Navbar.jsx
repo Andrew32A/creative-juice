@@ -37,33 +37,49 @@ const NavBar = () => {
     useEffect(() => {
         const sr = ScrollReveal({
           distance: "60px",
-          duration: 1500,
-          easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
           reset: false,
         });
         
-        sr.reveal('.nav-wrapper li', { 
+        sr.reveal('.nav-wrapper', { 
           origin: 'top', 
           interval: 100,
-          delay: 0
+          delay: 500
         });    
       }, []);
 
     return (
-        <div style={{ fontFamily: 'Mogra, sans-serif' }}>
+        <div style={{ fontFamily: 'DM Sans, sans-serif' }}>
             <div className={`z-50 fixed w-full flex justify-between items-center px-4 transition-all duration-500 ease-in-out ${isScrolled ? 'bg-opacity-80 backdrop-blur-sm shadow-lg' : 'bg-[#F2E2C4]'} text-[#fcf8c1] ${hideHeader ? '-top-32' : 'top-0'}`}>
                 <Link className="flex items-center" to="/">
                     <img src={Logo} alt="" style={{ width: '50px' }}/>
                 </Link>
 
                 <ul className="nav-wrapper hidden md:flex space-x-4 text-pink-300">
-                    <li><Link to="/" className="hover:text-green-400 transition duration-300 ease-in-out">Home</Link></li>
-                    {/* <li><Link to="/about" className="hover:text-green-400 transition duration-300 ease-in-out">About</Link></li> */}
-                    <li><Link to="/prompt" className="hover:text-green-400 transition duration-300 ease-in-out">Prompt</Link></li>
-                    <li><Link to="/login" className="hover:text-green-400 transition duration-300 ease-in-out">Login</Link></li>
-                    <li><Link to="/profile" className="hover:text-green-400 transition duration-300 ease-in-out">Profile</Link></li>
-                    {/* <li><Link to="/contact" className="hover:text-green-400 transition duration-300 ease-in-out">Contact</Link></li> */}
+                    <li style={{ display: 'flex', alignItems: 'center' }}>
+                        <Link to="/" className="nav-link text-black border-[#003000] border-2 px-4 py-1 inline-flex items-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
+                        Home
+                        </Link>
+
+                        <Link to="/prompt" className="nav-link text-black border-[#003000] border-2 px-4 py-1 ml-[-2px] inline-flex items-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
+                        Prompt
+                        </Link>
+
+                        <Link to="/profile" className="nav-link text-black border-[#003000] border-2 px-4 py-1 ml-[-2px] inline-flex items-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
+                        Profile
+                        </Link>
+                        
+                        <Link to="/login" className="nav-link text-black border-[#003000] border-2 px-4 py-1 ml-[-2px] inline-flex items-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
+                        Login
+                        </Link>
+
+                        <Link to="/signup" className="nav-link text-black border-[#003000] border-2 px-4 py-1 ml-[-2px] inline-flex items-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
+                        Sign Up
+                        </Link>
+                    </li>
                 </ul>
+
+                    {/* <li><Link to="/about" className="hover:text-green-400 transition duration-300 ease-in-out">About</Link></li> */}
+                    {/* <li><Link to="/contact" className="hover:text-green-400 transition duration-300 ease-in-out">Contact</Link></li> */}
             </div>
         </div>
     );
