@@ -3,14 +3,14 @@ import Logo from '../images/cj-logo.jpg';
 
 const Login = () => {
   return (
-    <div style={{ fontFamily: 'Mogra, sans-serif', backgroundColor: '#F2E2C4' }} className="w-full h-screen bg-[#F2E2C4]">
+    <div style={{ fontFamily: 'DM Sans, sans-serif', backgroundColor: '#F2E2C4' }} className="w-full h-screen bg-[#F2E2C4]">
       <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-          <img className="w-[3em] mx-auto" src={Logo} alt="Your Company" />
-          <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Sign in to your account</h2>
+          <img className="w-[3em] mx-auto" src={Logo} alt="Creative Juice Logo" />
+          <h1 style={{ fontFamily: 'Mogra, sans-serif', WebkitTextStrokeWidth: '0.5px', WebkitTextStrokeColor: '#161616' }} className="mt-10 text-center text-4xl leading-9 tracking-tight drop-shadow-2xl font-bold text-[#f2a7ca]">Sign in to your account</h1>
         </div>
 
-        <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+        <div className="mt-5 sm:mx-auto sm:w-full sm:max-w-sm">
           <form className="space-y-6" action="#" method="POST">
             <div>
               <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">Email address</label>
@@ -32,14 +32,28 @@ const Login = () => {
             </div>
 
             <div>
-              <button type="submit" className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign in</button>
+            <button 
+                type="submit" 
+                className="w-full flex justify-center items-center border-[#003000] border-2 px-4 py-2 my-1 text-black bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out"
+              >
+              Sign in
+              </button>
             </div>
           </form>
 
-          <p className="mt-10 text-center text-sm text-gray-500">
-            Not a member?{' '}
-            <span className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Sign Up Now!</span>
-          </p>
+          <div 
+            className="mt-10 text-center text-sm text-gray-500" 
+            style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+          >
+            <span className="text-sm text-gray-500">
+              Not a member?{' '}
+            </span>
+            <button
+              className="text-black border-[#003000] border-2 px-4 py-2 ml-2 inline-flex items-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out"
+            >
+              Sign Up Now!
+            </button>
+          </div>
         </div>
       </div>
     </div>
