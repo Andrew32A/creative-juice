@@ -18,6 +18,10 @@ const PostSchema = new Schema({
     type: Schema.ObjectId,
     ref: 'Prompt'
   },
+  image: {
+    type: String,
+    required: true,
+  }
 })
 
 const Post = model('Post', PostSchema);
