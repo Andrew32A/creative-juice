@@ -73,13 +73,12 @@ const NavBar = () => {
                         
                         <Link to="/login" className="nav-link text-black border-[#003000] border-2 px-4 py-1 ml-[-2px] inline-flex items-center justify-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
                             <i className="ri-login-box-line"></i>
-                            <span className="pl-2">Login</span>
+                            <span className="pl-2">Login/Sign Up</span>
                         </Link>
-
-                        <Link to="/signup" className="nav-link text-black border-[#003000] border-2 px-4 py-1 ml-[-2px] inline-flex items-center justify-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
+                        {/* <Link to="/signup" className="nav-link text-black border-[#003000] border-2 px-4 py-1 ml-[-2px] inline-flex items-center justify-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
                             <i className="ri-login-circle-line"></i>
                             <span className="pl-2">Sign Up</span>
-                        </Link>
+                        </Link> */}
                     </li>
                 </ul>
                     {/* <li><Link to="/about" className="hover:text-green-400 transition duration-300 ease-in-out">About</Link></li> */}
