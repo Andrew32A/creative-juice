@@ -1,4 +1,5 @@
 import Prompt from "../Models/prompt.js";
+import User from "../models/user.js";
 
 // Asking Daily Prompt
 export const getDailyPrompt = async (req, res, next) => {
@@ -39,6 +40,12 @@ export const createPrompt = async (req, res, next) => {
       stretch,
       dateUsed,
     };
+
+    const user = await User.findById(req.user.id);
+
+    if (!user.admin) {
+      return res.status(401).json({message: 'only admins can create prompts'});
+    }
     
     // Finding the prompt
     const foundPrompt = await Prompt.findOne({base});
@@ -107,6 +114,12 @@ export const updatePrompt = async (req, res, next) => {
       dateUsed,
       posts
     };
+
+    const user = await User.findById(req.user.id);
+
+    if (!user.admin) {
+      return res.status(401).json({message: 'only admins can update prompts'});
+    }
     
     const foundPrompt = await Prompt.findOne({prompt})    // Gets prompt
 
@@ -142,6 +155,13 @@ export const updatePrompt = async (req, res, next) => {
 
 export const deletePrompt = async (req, res, next) => {
   try {
+
+    const user = await User.findById(req.user.id);
+
+    if (!user.admin) {
+      return res.status(401).json({message: 'only admins can delete prompts'});
+    }
+
     await Prompt.findByIdAndDelete(req.params.id);
     res.status(200).json({
       success: true,
