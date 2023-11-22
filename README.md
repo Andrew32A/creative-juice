@@ -1,6 +1,6 @@
 # Creative Juice
 
-<img src="https://github.com/Andrew32A/creative-juice/blob/main/src/images/cj-logo.jpg" align="center">
+<img src="https://github.com/Andrew32A/creative-juice/blob/main/src/images/cj-logo.jpg" style="width: 20%;">
 
 This is for everybody who likes to write! Take whatever part of the prompt feels most exciting and doable to you. Try a prompt like "Write about a friendship where one person's out the door and the other has no idea" and see where it takes you. Our goal is for it to feel good, fun, and inspiring.
 
