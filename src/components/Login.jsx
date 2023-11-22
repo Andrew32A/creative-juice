@@ -113,8 +113,8 @@ const Login = () => {
             <span className="text-sm text-gray-500">
               Not a member?{' '}
             </span>
-            <Link to="/signup" className="nav-link text-black border-[#003000] border-2 px-4 py-1 inline-flex items-center justify-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
-              <span className="ml-2">Sign up now!</span>
+            <Link to="/signup" className="nav-link text-black border-[#003000] border-2 px-4 py-1 ml-2 inline-flex items-center justify-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
+              <span className="">Sign up now!</span>
             </Link>
           </div>
         </div>

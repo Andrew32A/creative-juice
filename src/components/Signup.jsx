@@ -25,7 +25,7 @@ const Signup = () => {
       <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img className="w-[3em] mx-auto" src={Logo} alt="Creative Juice Logo" />
-          <h1 style={{ fontFamily: 'Mogra, sans-serif', WebkitTextStrokeWidth: '0.5px', WebkitTextStrokeColor: '#161616' }} className="mt-10 text-center text-4xl leading-9 tracking-tight drop-shadow-2xl font-bold text-[#f2a7ca]">Sign in to your account</h1>
+          <h1 style={{ fontFamily: 'Mogra, sans-serif', WebkitTextStrokeWidth: '0.5px', WebkitTextStrokeColor: '#161616' }} className="mt-10 text-center text-4xl leading-9 tracking-tight drop-shadow-2xl font-bold text-[#f2a7ca]">Make an account</h1>
         </div>
 
         <div className="mt-5 sm:mx-auto sm:w-full sm:max-w-sm">
@@ -64,9 +64,6 @@ const Signup = () => {
             <div>
               <div className="flex items-center justify-between">
                 <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">Password</label>
-                <div className="text-sm">
-                  <p className="font-semibold text-indigo-600 hover:text-indigo-500">Forgot password?</p>
-                </div>
               </div>
               <div className="mt-2">
                 <input 
