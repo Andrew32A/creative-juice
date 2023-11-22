@@ -1,35 +1,22 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import axios from 'axios';
 import Logo from '../images/cj-logo.jpg';
 
-const Login = () => {
+const Signup = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = async (event) => {
+  const handleSignup = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch('http://localhost:3000/api/accounts/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ username, email, password }),
-      });
-
-      if (response.status === 200) {
-        console.log('Login successful');
-        const responseData = await response.json();
-        const authToken = responseData.token;
-
-        localStorage.setItem('authToken', authToken);
+      const response = await axios.post('http://localhost:3000/api/accounts/register', { username, email, password });
+      if (response.status === 201) {
+        console.log('Signup successful');
         window.location.href = '/';
-      } else {
-        console.error('Login error');
       }
     } catch (error) {
-      console.error('Login error', error);
+      console.error('Signup error', error.response);
     }
   };
 
@@ -42,32 +29,31 @@ const Login = () => {
         </div>
 
         <div className="mt-5 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form className="space-y-6" onSubmit={handleLogin}>
+          <form className="space-y-6" onSubmit={handleSignup}>
             <div>
               <label htmlFor="username" className="block text-sm font-medium leading-6 text-gray-900">Username</label>
               <div className="mt-2">
-                <input
-                  id="username"
-                  name="username"
-                  type="username"
-                  autoComplete="username"
-                  required
+                <input 
+                  id="username" 
+                  name="username" 
+                  type="text" 
+                  autoComplete="username" 
+                  required 
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                 />
               </div>
             </div>
-
             <div>
               <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">Email address</label>
               <div className="mt-2">
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  autoComplete="email"
-                  required
+                <input 
+                  id="email" 
+                  name="email" 
+                  type="email" 
+                  autoComplete="email" 
+                  required 
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -83,12 +69,12 @@ const Login = () => {
                 </div>
               </div>
               <div className="mt-2">
-                <input
-                  id="password"
-                  name="password"
-                  type="password"
-                  autoComplete="current-password"
-                  required
+                <input 
+                  id="password" 
+                  name="password" 
+                  type="password" 
+                  autoComplete="current-password" 
+                  required 
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
@@ -97,30 +83,18 @@ const Login = () => {
             </div>
 
             <div>
-              <button
-                type="submit"
+              <button 
+                type="submit" 
                 className="w-full flex justify-center items-center border-[#003000] border-2 px-4 py-2 my-1 text-black bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out"
               >
-                Sign in
+                Sign up
               </button>
             </div>
           </form>
-
-          <div
-            className="mt-10 text-center text-sm text-gray-500"
-            style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-          >
-            <span className="text-sm text-gray-500">
-              Not a member?{' '}
-            </span>
-            <Link to="/signup" className="nav-link text-black border-[#003000] border-2 px-4 py-1 inline-flex items-center justify-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
-              <span className="ml-2">Sign up now!</span>
-            </Link>
-          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default Signup;

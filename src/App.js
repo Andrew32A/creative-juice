@@ -7,6 +7,7 @@ import About from "./components/About.jsx";
 import Login from "./components/Login.jsx";
 import Profile from "./components/Profile.jsx";
 import Footer from "./components/Footer.jsx";
+import Signup from "./components/Signup.jsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </div>
       <Footer />
