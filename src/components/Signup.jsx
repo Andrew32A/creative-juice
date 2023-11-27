@@ -10,7 +10,7 @@ const Signup = () => {
   const handleSignup = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/api/accounts/register', { username, email, password });
+      const response = await axios.post('https://creative-juice.vercel.app/api/accounts/register', { username, email, password });
       if (response.status === 201) {
         console.log('Signup successful');
         window.location.href = '/';
