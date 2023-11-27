@@ -10,7 +10,7 @@ const Login = () => {
   const handleLogin = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch('https://creative-juice.vercel.app/api/accounts/login', {
+      const response = await fetch('http://localhost:3000/api/accounts/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
