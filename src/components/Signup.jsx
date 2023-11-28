@@ -10,10 +10,24 @@ const Signup = () => {
   const handleSignup = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/api/accounts/register', { username, email, password });
+      const response = await axios.post('http://localhost:3000/api/accounts/register', {
+        username,
+        email,
+        password,
+      });
       if (response.status === 201) {
         console.log('Signup successful');
-        window.location.href = '/';
+
+        const loginResponse = await axios.post('http://localhost:3000/api/accounts/login', {
+          identifier: username,
+          password,
+        });
+
+        if (loginResponse.status === 200) {
+          const authToken = loginResponse.data.token;
+          localStorage.setItem('authToken', authToken);
+          window.location.href = '/prompt';
+        }
       }
     } catch (error) {
       console.error('Signup error', error.response);
