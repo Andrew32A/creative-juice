@@ -1,11 +1,7 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import ScrollReveal from 'scrollreveal';
-import Placeholder from '../images/placeholder.jpg';
 
 const Content = () => {
-  const isAuthenticated = !!localStorage.getItem('authToken');
-
   useEffect(() => {
     const sr = ScrollReveal({
       distance: "60px",
@@ -43,29 +39,6 @@ const Content = () => {
         <h2 className="text-xl font-bold m-10 text-[#3f3f3f]">What Are The Deets?</h2>
         <p className="text-[#3f3f3f] mb-3">It's super simple. You'll get a new simple prompt and a more detailed one every day. You get to choose which you do that day. <br /> Submit whatever you draw, and you'll get to see the drawings other artists created for that prompt (likewise, they'd get to see yours)! All the drawings are anonymous.</p>
      
-      </div>
-   
-      <h1 style={{ fontFamily: 'DM Sans, sans-serif' }} className="text-4xl sm:text-7xl drop-shadow-2xl font-bold mb-8 text-[#3f3f3f]">Artwork Shared:</h1>
-      <div className="m-10 shadow-md rounded-md p-10 relative">
-        <div className="grid-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 justify-items-center relative">
-          {Array.from({ length: 12 }, (_, index) => (
-            <img
-              key={index}
-              className="w-full h-64 object-cover rounded-md relative"
-              src={Placeholder}
-              alt={`Artwork ${index + 1}`}
-            />
-          ))}
-          {isAuthenticated ? null : (
-            <div className="blur-overlay absolute top-0 left-0 w-full h-full backdrop-filter backdrop-blur-md flex flex-col items-center justify-center">
-              <p className="text-black text-lg mb-4">You need to be signed in to see the content.</p>
-              <Link to="/login" className="nav-link text-black border-[#003000] border-2 px-4 py-1 inline-flex items-center justify-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
-                <i className="ri-login-box-line"></i>
-                <span className="pl-2">Login/Sign Up</span>
-              </Link>
-            </div>
-          )}
-        </div>
       </div>
     </div>
   );
