@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div style={{ fontFamily: 'Mogra, sans-serif', backgroundColor: '#F2E2C4' }}>
+    <div style={{ fontFamily: 'DM Sans, sans-serif', backgroundColor: '#F2E2C4' }}>
       {/* cards */}
       <div className="flex justify-center overflow-x-auto p-4">
         {/* card 1 */}

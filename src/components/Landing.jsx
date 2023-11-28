@@ -90,7 +90,7 @@ const Home = () => {
               <img className="w-[250px] mx-auto mt-1 ml-3" src={Logo} alt="Creative Juice Logo" />
             </div>
           </div>
-          <div style={{ textAlign: 'center', fontFamily: 'Mogra, sans-serif', marginTop: '50px' }}>
+          <div style={{ textAlign: 'center', fontFamily: 'DM Sans, sans-serif', marginTop: '50px' }}>
             {/* <h2>See What Juicers Made!</h2>
             <h3>Share What You Created to Unlock Access.</h3>
             <h3>All Art is Anonymous!</h3> */}
