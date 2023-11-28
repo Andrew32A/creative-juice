@@ -45,15 +45,16 @@ export const register = async (req, res, next) => {
 
 export const login = async (req, res, next) => {
   try {
-    const { username, password } = req.body;
+    const { identifier, password } = req.body;
 
-    //check if user exists
-    const user = await User.findOne({ username });
+    const user = await User.findOne({
+      $or: [{ username: identifier }, { email: identifier }],
+    });
 
     if (!user) {
       return res
         .status(401)
-        .json({ message: `Error user:${username} not found!` });
+        .json({ message: `Error user identifier:${identifier} not found!` });
     }
 
     const isMatch = await user.comparePassword(password);
@@ -76,7 +77,7 @@ export const login = async (req, res, next) => {
         message: "User logged in successfully",
       });
   } catch (err) {
-    console.log(err);
+    console.error(err);
     next(err);
   }
 };
