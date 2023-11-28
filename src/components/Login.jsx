@@ -23,7 +23,7 @@ const Login = () => {
         const authToken = responseData.token;
 
         localStorage.setItem('authToken', authToken);
-        window.location.href = '/';
+        window.location.href = '/prompt';
       } else {
         console.error('Login error');
       }
