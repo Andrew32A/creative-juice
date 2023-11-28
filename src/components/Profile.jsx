@@ -31,20 +31,15 @@ const Profile = () => {
           />
           <div>
             <h3 className="text-lg font-bold">Lorem Ipsum</h3>
-            <p className="text-gray-500">lorem.ipsum@loremipsum.com</p>
+            <p className="text-[#3f3f3f]">lorem.ipsum@loremipsum.com</p>
           </div>
         </div>
         <div>
           <h4 className="text-lg font-bold mb-2">About Me</h4>
-          <p className="text-gray-700">
+          <p className="text-[#3f3f3f]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             nec fermentum ligula. Nullam vel velit et arcu pharetra tristique.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            nec fermentum ligula. Nullam vel velit et arcu pharetra tristique.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            nec fermentum ligula. Nullam vel velit et arcu pharetra tristique.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            nec fermentum ligula. Nullam vel velit et arcu pharetra tristique.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           </p>
         </div>
       </div>

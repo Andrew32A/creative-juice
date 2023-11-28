@@ -2,7 +2,7 @@ import React from 'react';
 
 const Prompt = () => {
   const postItStyle = {
-    width: '350px',
+    width: '375px',
     height: '350px',
     fontFamily: 'DM Sans',
   };
@@ -14,15 +14,15 @@ const Prompt = () => {
   return (
     <div className='bg-[#F2E2C4] flex items-center justify-center h-screen'>
       {/* yellow post-it */}
-      <div className="bg-yellow-300 p-6 shadow-md mr-2 mx-7" style={postItStyle}>
+      <div className="bg-[#ea90ea] p-6 mr-2 mx-7" style={postItStyle}>
         <h1 className="font-bold mb-2" style={customFontSize}>DRAW:</h1>
-        <p className="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p className="text-[#3f3f3f]">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
 
       {/* blue post-it */}
-      <div className="bg-blue-300 p-6 shadow-md m-2 mx-7" style={postItStyle}>
+      <div className="bg-[#b9f3e4] p-6 m-2 mx-7" style={postItStyle}>
         <h1 className="font-bold mb-2" style={customFontSize}>PROMPT:</h1>
-        <p className="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p className="text-[#3f3f3f]">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
     </div>
   );

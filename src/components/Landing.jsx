@@ -77,29 +77,27 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row justify-between items-center">
             <div style={{  }}>
               <h1 style={{ fontFamily: 'DM Sans, sans-serif' }} className="text-4xl sm:text-7xl drop-shadow-2xl font-bold text-[#f2a7ca]">Creative Juice!</h1>
-              <p className="text-[#000000] py-4 max-w-[700px]">Get <span className="font-bold text-[#000]">one creative drawing prompt</span> every day. Reply with your drawing to see what others created for the same prompt. Juicy.</p>
+              <p className="text-[#3f3f3f] py-4 max-w-[700px]">Get <span className="font-bold text-[#3f3f3f]">one creative drawing prompt</span> every day. Submit your drawing to see what other artists created for the same prompt. Juicy.</p>
               <div className='email-input-wrapper' style={{ display: 'flex', alignItems: 'center' }}>
                 <button 
                   className="text-black group border-[#003000] border-2 px-4 py-2 my-1 ml-[-2px] flex items-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out z-20">
-                  Login/Sign up
+                  Get Started
                 </button>
               </div>
-              <p className="email-subtext text-[#000000] py-4 max-w-[700px] text-xs">We won't spam you. This is simply a fun experiment by artists, for artists.</p>
+              <p className="email-subtext text-[#3f3f3f] py-4 max-w-[700px] text-xs">We won't spam you. This is simply a fun experiment by artists, for artists.</p>
             </div>
             <div className='img-wrapper'>
               <img className="w-[250px] mx-auto mt-1 ml-3" src={Logo} alt="Creative Juice Logo" />
             </div>
           </div>
-          <div style={{ textAlign: 'center', fontFamily: 'DM Sans, sans-serif', marginTop: '50px' }}>
-            {/* <h2>See What Juicers Made!</h2>
-            <h3>Share What You Created to Unlock Access.</h3>
-            <h3>All Art is Anonymous!</h3> */}
+          
+          {/* <div style={{ textAlign: 'center', fontFamily: 'DM Sans, sans-serif', marginTop: '50px' }}>
             {showArrow && (
               <div className="arrow" style={{ position: 'absolute', ...arrowPosition }}>
                 <i className="ri-arrow-down-s-line text-6xl"></i>
               </div>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
       <Content />
