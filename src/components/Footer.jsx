@@ -3,7 +3,7 @@ import Logo from '../images/cj-logo.jpg';
 
 const Footer = () => {
   return (
-    <div style={{ fontFamily: 'Mogra, sans-serif' }}>
+    <div style={{ fontFamily: 'DM Sans, sans-serif' }}>
     <footer className="bg-[#f1f1f1] dark:bg-gray-700">
     <div className="mx-autow-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">

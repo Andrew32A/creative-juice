@@ -19,7 +19,7 @@ const Profile = () => {
   }, []);
 
   return (
-    <div style={{ fontFamily: 'Mogra, sans-serif', backgroundColor: '#F2E2C4' }}>
+    <div style={{ fontFamily: 'DM Sans, sans-serif', backgroundColor: '#F2E2C4' }}>
     <div className="flex items-center justify-center h-screen m-10">
       <div className="bg-white p-8 shadow-md rounded-md">
         <h2 className="text-2xl font-bold mb-6">Username</h2>
