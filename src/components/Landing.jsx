@@ -75,20 +75,16 @@ const Home = () => {
       <div name='home' className="w-full h-screen bg-[#F2E2C4] flex justify-center items-center">
         <div className="max-w-[1000px] px-8">
           <div className="flex flex-col sm:flex-row justify-between items-center">
-            <div style={{ fontFamily: 'DM Sans, sans-serif' }}>
-              <h1 style={{ fontFamily: 'Mogra, sans-serif', WebkitTextStrokeWidth: '0.5px', WebkitTextStrokeColor: '#161616' }} className="text-4xl sm:text-7xl drop-shadow-2xl font-bold text-[#f2a7ca]">Creative Juice!</h1>
-              <p className="text-[#8892b0] py-4 max-w-[700px]">Get <span className="font-bold text-[#000]">one creative writing prompt</span> in your inbox every day. Reply with your writing to see what others created for the same prompt. Juicy.</p>
+            <div style={{  }}>
+              <h1 style={{ fontFamily: 'DM Sans, sans-serif' }} className="text-4xl sm:text-7xl drop-shadow-2xl font-bold text-[#f2a7ca]">Creative Juice!</h1>
+              <p className="text-[#000000] py-4 max-w-[700px]">Get <span className="font-bold text-[#000]">one creative drawing prompt</span> every day. Reply with your drawing to see what others created for the same prompt. Juicy.</p>
               <div className='email-input-wrapper' style={{ display: 'flex', alignItems: 'center' }}>
-                <input
-                  type="text"
-                  className="border-[#003000] border-2 px-4 py-2 my-1 z-10"
-                  placeholder="Enter Email Here" />
                 <button 
                   className="text-black group border-[#003000] border-2 px-4 py-2 my-1 ml-[-2px] flex items-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out z-20">
-                  Get The Juice!
+                  Login/Sign up
                 </button>
               </div>
-              <p className="email-subtext text-[#8892b0] py-4 max-w-[700px] text-xs">We won't spam you. This is simply a fun experiment by artists, for artists.</p>
+              <p className="email-subtext text-[#000000] py-4 max-w-[700px] text-xs">We won't spam you. This is simply a fun experiment by artists, for artists.</p>
             </div>
             <div className='img-wrapper'>
               <img className="w-[250px] mx-auto mt-1 ml-3" src={Logo} alt="Creative Juice Logo" />
