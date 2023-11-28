@@ -4,7 +4,7 @@ const Prompt = () => {
   const postItStyle = {
     width: '350px',
     height: '350px',
-    fontFamily: 'Mogra',
+    fontFamily: 'DM Sans',
   };
 
   const customFontSize = {
