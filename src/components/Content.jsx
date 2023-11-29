@@ -20,9 +20,9 @@ const Content = () => {
   return (
     <div className="text-center mt-8 mb-3" style={{ fontFamily: 'DM Sans, sans-serif'}}>
      
-     <div className='m-10 shadow-md rounded-md p-10 relative'>
+     <div className='m-10 rounded-md p-10 relative'>
       
-        <h2 className="text-xl font-bold m-10 text-[#3f3f3f]">Is This For Newbies?</h2>
+        <h2 className="text-2xl font-bold m-10 text-[#3f3f3f]">Is This For Newbies?</h2>
         <p className="text-[#3f3f3f]">This is for everybody who likes to make art! 
         Take whatever part of the prompt feels most exciting and doable to you.<br /> If it's something like, 
         "Draw an astronaut in a garden of alien mushrooms", maybe you just draw some neat mushrooms. Our goal is for it to feel good, fun, and inspiring.</p>     
@@ -36,7 +36,7 @@ const Content = () => {
         We hope you'll join our community!
       </p>
       
-        <h2 className="text-xl font-bold m-10 text-[#3f3f3f]">What Are The Deets?</h2>
+        <h2 className="text-2xl font-bold m-10 text-[#3f3f3f]">What Are The Deets?</h2>
         <p className="text-[#3f3f3f] mb-3">It's super simple. You'll get a new simple prompt and a more detailed one every day. You get to choose which you do that day. <br /> Submit whatever you draw, and you'll get to see the drawings other artists created for that prompt (likewise, they'd get to see yours)! All the drawings are anonymous.</p>
      
       </div>

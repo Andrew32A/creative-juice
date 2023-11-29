@@ -48,7 +48,7 @@ const Profile = () => {
       {/* Artwork Shared */}
       <div className="text-center mt-8 mb-3">
         <h1 className="text-5xl mb-8">Artwork Shared:</h1>
-        <div className="bg-[#f1f1f1] m-10 shadow-md rounded-md p-10 artwork-grid">
+        <div className="bg-[#f1f1f1] m-10 rounded-md p-10 artwork-grid">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 justify-items-center">
             <img className="w-full h-64 object-cover rounded-md" src={Placeholder} alt="Artwork 1" />
             <img className="w-full h-64 object-cover rounded-md" src={Placeholder} alt="Artwork 2" />
