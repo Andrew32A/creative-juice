@@ -31,7 +31,6 @@ const Signup = () => {
       }
     } catch (error) {
       console.error('Signup error:', error);
-      console.log(username, email, password)
       if (error.response) {
         console.error('Server response:', error.response.data);
       }
