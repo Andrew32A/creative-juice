@@ -26,7 +26,6 @@ const Login = () => {
         window.location.href = '/prompt';
       } else {
         console.error('Login error');
-        console.log(identifier, password);
       }
     } catch (error) {
       console.error('Login error', error);
