@@ -82,7 +82,7 @@ const NavBar = () => {
             {isAuthenticated && (
               <Link
                 to="/prompt"
-                className="nav-link text-black border-[#003000] border-2 px-4 py-1 ml-[-2px] inline-flex items-center justify-center bg-[#BBF2E2] hover-bg-[#F2A7CA] transition duration-300 ease-in-out"
+                className="nav-link text-black border-[#003000] border-2 px-4 py-1 ml-[-2px] inline-flex items-center justify-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out"
               >
                 <i className="ri-pencil-line"></i>
                 <span className="pl-2">Prompt</span>
