@@ -42,13 +42,20 @@ const Home = () => {
         <div className="max-w-[1000px] px-8">
           <div className="flex flex-col sm:flex-row justify-between items-center">
             <div style={{  }}>
-              <h1 style={{ fontFamily: 'DM Sans, sans-serif' }} className="text-4xl sm:text-7xl drop-shadow-2xl font-bold text-[#3f3f3f]">Creative Juice!</h1>
+            <p className="email-subtext text-[#3f3f3f] py-4 max-w-[700px] text-xs">YOU LOOK DEPLETED.</p>
+              {/* <h1 style={{ fontFamily: 'DM Sans, sans-serif' }} className="text-4xl sm:text-6xl drop-shadow-2xl font-bold text-[#3f3f3f]">You Need Creative Juice!</h1> */}
+              <h1 style={{
+              fontFamily: 'DM Sans, sans-serif',
+              WebkitTextStroke: '1px #f199f2', 
+              textStroke: '1px #f199f2',       
+              }} className="text-4xl sm:text-6xl drop-shadow-2xl font-bold text-[#3f3f3f]">You Need Creative Juice!</h1>
+
               <p className="text-[#3f3f3f] py-4 max-w-[700px]">Get <span className="font-bold text-[#3f3f3f]">one creative drawing prompt</span> every day. Submit your drawing to see what other artists created for the same prompt. Juicy.</p>
               <div className='email-input-wrapper' style={{ display: 'flex', alignItems: 'center' }}>
               <Link
                 to="/login"
                 className="text-black group border-[#003000] border-2 px-4 py-2 my-1 ml-[-2px] flex items-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out z-20">
-                <span>Get Started</span>
+                <span>Get the Juice</span>
               </Link>
               </div>
               <p className="email-subtext text-[#3f3f3f] py-4 max-w-[700px] text-xs">We won't spam you. This is simply a fun experiment by artists, for artists.</p>
