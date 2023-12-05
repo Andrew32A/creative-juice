@@ -1,0 +1,562 @@
+[
+    {
+        "base": "Sketch a serene meadow with a single tree.",
+        "stretch": "Illustrate an otherworldly forest where the trees have glowing, bioluminescent leaves and unusual shapes."
+    },
+    {
+        "base": "Draw a cozy cottage by a river.",
+        "stretch": "Create a futuristic floating habitat above a vast, alien ocean, sustaining life amidst technological marvels."
+    },
+    {
+        "base": "Illustrate a child playing with a pet.",
+        "stretch": "Sketch an epic battle between mythical creatures in a mythical realm."
+    },
+    {
+        "base": "Create a snowman in a winter wonderland.",
+        "stretch": "Draw a colossal ice fortress inhabited by ice giants and guarded by mythical creatures."
+    },
+    {
+        "base": "Sketch a sailing boat on a calm sea.",
+        "stretch": "Illustrate a steampunk-inspired airship navigating through a stormy sky filled with mechanical creatures."
+    },
+    {
+        "base": "Draw a group of friends around a campfire.",
+        "stretch": "Create an intergalactic council meeting on a distant planet, attended by representatives of various alien species."
+    },
+    {
+        "base": "Illustrate a butterfly resting on a flower.",
+        "stretch": "Sketch an enchanted garden where plants take on whimsical, anthropomorphic forms and converse with each other."
+    },
+    {
+        "base": "Sketch a hot air balloon floating in the sky.",
+        "stretch": "Draw a city built upon giant floating islands, connected by bridges and powered by mysterious floating crystals."
+    },
+    {
+        "base": "Create a beach scene with a sandcastle.",
+        "stretch": "Illustrate an underwater metropolis inhabited by merfolk and aquatic creatures."
+    },
+    {
+        "base": "Draw a simple mountain landscape.",
+        "stretch": "Sketch a futuristic terraforming operation on a distant planet, transforming its terrain and atmosphere."
+    },
+    {
+        "base": "Illustrate a cat napping on a windowsill.",
+        "stretch": "Create a cityscape where cats operate advanced machinery in a secret underground society."
+    },
+    {
+        "base": "Sketch a peaceful garden with a small pond.",
+        "stretch": "Draw an overgrown, abandoned city being reclaimed by nature, with wildlife thriving among the ruins."
+    },
+    {
+        "base": "Create a rainbow over a field of flowers.",
+        "stretch": "Illustrate a rainbow bridge leading to a magical realm ruled by mythical creatures."
+    },
+    {
+        "base": "Draw a treehouse in a lush forest.",
+        "stretch": "Sketch an alien library filled with books made of glowing crystals containing knowledge from across the universe."
+    },
+    {
+        "base": "Illustrate a bird building a nest in a tree.",
+        "stretch": "Create a futuristic laboratory where birds assist scientists in conducting experiments."
+    },
+    {
+        "base": "Sketch a smiling sun with a face.",
+        "stretch": "Draw a celestial kingdom in the clouds, ruled by a sun deity and attended by celestial beings."
+    },
+    {
+        "base": "Create a moonlit scene with a wolf howling.",
+        "stretch": "Illustrate a post-apocalyptic cityscape overrun by mutated creatures under a blood moon."
+    },
+    {
+        "base": "Draw a peaceful countryside with a windmill.",
+        "stretch": "Sketch a mechanical wonderland where clockwork animals roam in a land governed by time."
+    },
+    {
+        "base": "Illustrate a house with a vegetable garden.",
+        "stretch": "Create an advanced city with buildings integrated into enormous trees and sustainable ecosystems."
+    },
+    {
+        "base": "Sketch a starry night sky with a shooting star.",
+        "stretch": "Draw an interstellar train traveling through space, passing by cosmic phenomena and undiscovered planets."
+    },
+    {
+        "base": "Illustrate a cat chasing a butterfly.",
+        "stretch": "Create a fantastical jungle where cats ride giant butterflies as mounts."
+    },
+    {
+        "base": "Sketch a bird perched on a branch.",
+        "stretch": "Draw a mythical bird guarding an ancient tree of life in a mystical forest."
+    },
+    {
+        "base": "Draw a simple house in the countryside.",
+        "stretch": "Illustrate a treehouse city interconnected by bridges, housing a community of nature-loving inhabitants."
+    },
+    {
+        "base": "Create a smiling sun in the sky.",
+        "stretch": "Sketch a solar deity surrounded by celestial creatures in a cosmic coronation ceremony."
+    },
+    {
+        "base": "Sketch a person reading under a tree.",
+        "stretch": "Illustrate an enchanted library hidden within the roots of a magical tree, filled with books of ancient wisdom."
+    },
+    {
+        "base": "Draw a cute bunny hopping in a garden.",
+        "stretch": "Create an entire ecosystem where anthropomorphic animals lead a sophisticated society in harmony."
+    },
+    {
+        "base": "Illustrate a boat sailing on calm waters.",
+        "stretch": "Sketch a sea voyage where the ship sails through a whirlpool portal into a parallel dimension."
+    },
+    {
+        "base": "Create a butterfly on a flower.",
+        "stretch": "Draw a butterfly sanctuary nestled atop clouds, visited by creatures from across the realms."
+    },
+    {
+        "base": "Sketch a horse running in a field.",
+        "stretch": "Illustrate a horse-powered metropolis where majestic creatures assist in daily transportation."
+    },
+    {
+        "base": "Draw a couple walking hand in hand.",
+        "stretch": "Create a cosmic dance party where celestial beings and aliens groove under starlight."
+    },
+    {
+        "base": "Illustrate a cat curled up sleeping.",
+        "stretch": "Sketch a mystical feline guardian protecting an ancient tome of arcane knowledge."
+    },
+    {
+        "base": "Create a smiling sun in the sky.",
+        "stretch": "Draw a colossal cosmic being manipulating stars in the universe's celestial ballet."
+    },
+    {
+        "base": "Sketch a person with a telescope.",
+        "stretch": "Illustrate an astronomer exploring a galaxy where planets are carried by giant cosmic creatures."
+    },
+    {
+        "base": "Draw a smiling cloud in the sky.",
+        "stretch": "Create a floating city powered by sentient clouds, hovering high above the earth."
+    },
+    {
+        "base": "Illustrate a frog sitting on a lily pad.",
+        "stretch": "Sketch a frog kingdom where amphibians rule over a realm of aquatic wonders."
+    },
+    {
+        "base": "Create a boat sailing on a river.",
+        "stretch": "Draw a magical vessel traversing a river that flows through realms of dreams and nightmares."
+    },
+    {
+        "base": "Sketch a panda eating bamboo.",
+        "stretch": "Illustrate a bamboo forest tended by pandas, concealing an entrance to a mystical realm."
+    },
+    {
+        "base": "Draw a dog playing fetch.",
+        "stretch": "Create a canine metropolis where dogs use advanced technology to explore the cosmos."
+    },
+    {
+        "base": "Illustrate a sunset over the ocean.",
+        "stretch": "Sketch an alternate reality where sunsets are portals to fantastical realms."
+    },
+    {
+        "base": "Create a colorful parrot on a branch.",
+        "stretch": "Draw a magical bird delivering messages between distant kingdoms."
+    },
+    {
+        "base": "Illustrate a charming old bookstore on a cobblestone street.",
+        "stretch": "Create a futuristic city with buildings that transform into giant robots for defense."
+    },
+    {
+        "base": "Sketch a cozy cabin nestled in a snowy forest.",
+        "stretch": "Draw an undersea research station surrounded by vibrant, bioluminescent sea creatures."
+    },
+    {
+        "base": "Create a scene of a bustling market in a medieval town square.",
+        "stretch": "Illustrate an ancient temple hidden in the depths of a dense jungle, guarded by mystical creatures."
+    },
+    {
+        "base": "Draw a group of adventurers exploring an ancient, abandoned castle.",
+        "stretch": "Sketch a space colony on a distant planet, with floating gardens and advanced technology."
+    },
+    {
+        "base": "Illustrate a quiet lakeside with a small wooden pier.",
+        "stretch": "Create a cityscape in the clouds supported by colossal, floating crystals."
+    },
+    {
+        "base": "Sketch a field of wildflowers with butterflies fluttering around.",
+        "stretch": "Draw a majestic waterfall cascading down a crystalline mountain."
+    },
+    {
+        "base": "Create a scene of a quaint village surrounded by rolling hills.",
+        "stretch": "Illustrate a cityscape with buildings intertwined with massive ancient trees."
+    },
+    {
+        "base": "Draw a dragon soaring across a starlit sky.",
+        "stretch": "Sketch an enormous spaceship hovering over a futuristic city skyline."
+    },
+    {
+        "base": "Illustrate a magical library with floating books and enchanted artifacts.",
+        "stretch": "Create a massive, mechanical colossus roaming through a post-apocalyptic wasteland."
+    },
+    {
+        "base": "Sketch a scene of a traditional Japanese garden with a koi pond.",
+        "stretch": "Draw a labyrinthine cave system inhabited by bioluminescent creatures."
+    },
+    {
+        "base": "Create a serene scene of a sun setting behind a mountain range.",
+        "stretch": "Illustrate an alien ritual site amidst glowing flora on a distant planet."
+    },
+    {
+        "base": "Draw a peaceful village amidst cherry blossom trees.",
+        "stretch": "Sketch a floating city powered by mystical energy."
+    },
+    {
+        "base": "Illustrate a mythical creature resting in a secret garden.",
+        "stretch": "Create an underwater metropolis with domed structures and advanced technology."
+    },
+    {
+        "base": "Sketch a breathtaking view of the aurora borealis over a snowy landscape.",
+        "stretch": "Draw a futuristic city where each building is a self-sufficient ecosystem."
+    },
+    {
+        "base": "Create a scene of a carnival with fantastical rides and colorful booths.",
+        "stretch": "Illustrate a hidden sanctuary in the clouds accessible only by flying creatures."
+    },
+    {
+        "base": "Draw a mysterious portal in the middle of an ancient ruin.",
+        "stretch": "Sketch a cityscape with gravity-defying architecture."
+    },
+    {
+        "base": "Illustrate a serene bamboo forest with a hidden pathway.",
+        "stretch": "Create a city reclaimed by nature, where plants grow freely among skyscrapers."
+    },
+    {
+        "base": "Sketch a picturesque countryside with rolling vineyards.",
+        "stretch": "Draw an enormous, sentient tree protecting a magical grove."
+    },
+    {
+        "base": "Create a scene of a grand palace atop a floating island.",
+        "stretch": "Illustrate a colossal robotic guardian standing watch over a futuristic city."
+    },
+    {
+        "base": "Draw an ancient shipwreck on a misty shore.",
+        "stretch": "Sketch an immense, ancient library guarded by mystical beings."
+    },
+    {
+        "base": "Illustrate a carnival in outer space with alien rides and attractions.",
+        "stretch": "Create a cyberpunk cityscape with holographic advertisements and neon-lit streets."
+    },
+    {
+        "base": "Sketch a mystical portal hidden within an ancient tree.",
+        "stretch": "Draw an elemental guardian protecting a sacred natural spring."
+    },
+    {
+        "base": "Create an underwater city inspired by ancient Atlantis.",
+        "stretch": "Illustrate a floating marketplace on giant airships."
+    },
+    {
+        "base": "Draw a whimsical village inhabited by anthropomorphic animals.",
+        "stretch": "Sketch a colony on Mars with domed habitats and advanced terraforming."
+    },
+    {
+        "base": "Illustrate an enchanted garden where every plant has a unique magical property.",
+        "stretch": "Create an army of clockwork soldiers marching through a futuristic battlefield."
+    },
+    {
+        "base": "Sketch an enormous, ancient tree housing an entire ecosystem within its branches.",
+        "stretch": "Draw an intergalactic highway bustling with traffic from various alien civilizations."
+    },
+    {
+        "base": "Create a scene of a time-traveling explorer encountering dinosaurs.",
+        "stretch": "Illustrate a magical academy hidden within a mountain."
+    },
+    {
+        "base": "Draw a floating city built on giant airships drifting through the skies.",
+        "stretch": "Sketch a colony on a distant planet with flora that emits colorful light at night."
+    },
+    {
+        "base": "Illustrate a cityscape where the buildings are alive and grow like plants.",
+        "stretch": "Create an underground society living in a network of caves illuminated by glowing crystals."
+    },
+    {
+        "base": "Sketch an abandoned space station overrun by nature.",
+        "stretch": "Draw a futuristic metropolis powered by renewable energy sources."
+    },
+    {
+        "base": "Create a scene of a magical library where books come to life.",
+        "stretch": "Illustrate a cityscape surrounded by a protective force field."
+    },
+    {
+        "base": "Draw a magical forest with trees that change their color based on emotions.",
+        "stretch": "Sketch an ancient city carved into the side of a colossal mountain."
+    },
+    {
+        "base": "Illustrate a hidden cave filled with glowing crystals and ancient artifacts.",
+        "stretch": "Create an alien market selling exotic goods from across the universe."
+    },
+    {
+        "base": "Sketch a group of adventurers exploring an ancient temple buried in the desert sands.",
+        "stretch": "Draw a floating island inhabited by creatures with wings made of pure energy."
+    },
+    {
+        "base": "Create a scene of a village on the back of a giant creature roaming the countryside.",
+        "stretch": "Illustrate a space station shaped like a colossal, mechanical flower."
+    },
+    {
+        "base": "Draw a post-apocalyptic city reclaimed by nature with plants growing amidst ruins.",
+        "stretch": "Sketch an interdimensional portal surrounded by arcane symbols."
+    },
+    {
+        "base": "Illustrate a magical laboratory where potions and spells are brewed.",
+        "stretch": "Create a cityscape where buildings are made of crystal and emit a soft glow."
+    },
+    {
+        "base": "Sketch a mystical waterfall flowing upwards into the sky.",
+        "stretch": "Draw an ancient library guarded by animated stone statues."
+    },
+    {
+        "base": "Create a scene of a floating market atop giant floating lily pads.",
+        "stretch": "Illustrate a cityscape with gravity-defying structures."
+    },
+    {
+        "base": "Draw an underwater civilization living in colossal seashells.",
+        "stretch": "Sketch a city in the clouds where residents travel using winged contraptions."
+    },
+    {
+        "base": "Illustrate a fantastical city floating on a giant airship.",
+        "stretch": "Create an underground world where bioluminescent creatures thrive."
+    },
+    {
+        "base": "Sketch a mystical portal hidden within an ancient ruin.",
+        "stretch": "Draw an extraterrestrial marketplace with peculiar alien vendors."
+    },
+    {
+        "base": "Create a scene of a magical carnival under a starry sky.",
+        "stretch": "Illustrate a cityscape inspired by ancient Mayan architecture but with futuristic elements."
+    },
+    {
+        "base": "Draw a hidden garden filled with enchanted flowers and glowing mushrooms.",
+        "stretch": "Sketch a floating island powered by a giant crystal at its core."
+    },
+    {
+        "base": "Illustrate a forest where trees have doors leading to secret realms.",
+        "stretch": "Create a cityscape with buildings shaped like giant animals."
+    },
+    {
+        "base": "Sketch an abandoned space station overrun by alien flora.",
+        "stretch": "Draw a futuristic cityscape with gravity-defying transportation networks."
+    },
+    {
+        "base": "Create a scene of a magical library filled with spellbooks and ancient scrolls.",
+        "stretch": "Illustrate a hidden sanctuary guarded by mythical creatures."
+    },
+    {
+        "base": "Draw an underground city illuminated by glowing crystals.",
+        "stretch": "Sketch a sprawling desert city powered by solar energy and wind turbines."
+    },
+    {
+        "base": "Illustrate a landscape of floating islands connected by magical bridges.",
+        "stretch": "Create a scene of a fantastical bazaar with exotic creatures as vendors."
+    },
+    {
+        "base": "Sketch an ancient temple hidden in a dense, mystical forest.",
+        "stretch": "Draw a cityscape where the streets are filled with miniature robotic creatures."
+    },
+    {
+        "base": "Create a scene of a steampunk metropolis powered by steam and gears.",
+        "stretch": "Illustrate an alien oasis with crystal-clear waters and strange flora."
+    },
+    {
+        "base": "Draw a futuristic city built on the back of a colossal, mechanical beast.",
+        "stretch": "Sketch an underwater civilization living in giant domes made of coral."
+    },
+    {
+        "base": "Illustrate a mythical garden guarded by ancient stone statues.",
+        "stretch": "Create a cityscape with skyscrapers designed like colossal trees."
+    },
+    {
+        "base": "Sketch an abandoned magical laboratory overrun by overgrown plants.",
+        "stretch": "Draw a cityscape with buildings that transform into vehicles."
+    },
+    {
+        "base": "Create a scene of a hidden alchemist's workshop in a bustling city.",
+        "stretch": "Illustrate a floating fortress protected by ancient magic."
+    },
+    {
+        "base": "Draw a scene of a cosmic library with books containing knowledge of the universe.",
+        "stretch": "Sketch a cityscape made entirely of crystals and gemstones."
+    },
+    {
+        "base": "Illustrate a mystical garden with plants that change color based on emotions.",
+        "stretch": "Create a futuristic amusement park with rides inspired by alien creatures."
+    },
+    {
+        "base": "Sketch an ancient dragon's lair hidden within a mountain.",
+        "stretch": "Draw a cityscape where each building is a unique piece of art."
+    },
+    {
+        "base": "Create a scene of a charming village atop a series of floating islands.",
+        "stretch": "Illustrate a cityscape where technology and nature coexist harmoniously."
+    },
+    {
+        "base": "Draw an underwater cityscape with bioluminescent aquatic life.",
+        "stretch": "Sketch a labyrinthine underground city lit by glowing crystals."
+    },
+    {
+        "base": "Sketch a sunny day at the beach with a sandcastle.",
+        "stretch": "Illustrate an underwater kingdom beneath the sandcastle, ruled by merfolk royalty."
+    },
+    {
+        "base": "Draw a colorful garden with butterflies and flowers.",
+        "stretch": "Create a hidden portal within the garden leading to a magical realm."
+    },
+    {
+        "base": "Illustrate a campfire scene with friends telling stories.",
+        "stretch": "Sketch a celestial gathering around the campfire with mythical beings from different worlds."
+    },
+    {
+        "base": "Create a cozy cafe on a street corner.",
+        "stretch": "Draw a cafe bustling with intergalactic travelers and cosmic creatures."
+    },
+    {
+        "base": "Sketch a peaceful countryside with grazing sheep.",
+        "stretch": "Illustrate a countryside festival with creatures from folklore joining the festivities."
+    },
+    {
+        "base": "Draw a simple treehouse in a backyard.",
+        "stretch": "Create a treehouse city connected by elaborate bridges high among the branches."
+    },
+    {
+        "base": "Illustrate a kitten playing with a ball of yarn.",
+        "stretch": "Sketch a magical yarn that unravels into portals to different dimensions."
+    },
+    {
+        "base": "Create a field of daisies under a blue sky.",
+        "stretch": "Draw a daisy field where each flower opens into a tiny world."
+    },
+    {
+        "base": "Sketch a peaceful mountain cabin in the woods.",
+        "stretch": "Illustrate a cabin that serves as a gateway to parallel universes."
+    },
+    {
+        "base": "Draw a family of ducks swimming in a pond.",
+        "stretch": "Create a pond where ducks sail boats to a duck metropolis."
+    },
+    {
+        "base": "Illustrate a child flying a kite in a park.",
+        "stretch": "Sketch a park where kites take on a life of their own, flying adventurers around the world."
+    },
+    {
+        "base": "Create a scene of kids playing hide and seek.",
+        "stretch": "Draw a hide-and-seek game between mythical creatures in a magical forest."
+    },
+    {
+        "base": "Sketch a small, cozy bookshop on a street corner.",
+        "stretch": "Illustrate a bookshop that holds books containing portals to different literary worlds."
+    },
+    {
+        "base": "Draw a picnic scene in a meadow.",
+        "stretch": "Create a picnic where the food turns into magical creatures when eaten."
+    },
+    {
+        "base": "Illustrate a colorful balloon floating in the sky.",
+        "stretch": "Sketch a sky filled with balloons carrying travelers to distant lands."
+    },
+    {
+        "base": "Create a scene of a child playing with a toy spaceship.",
+        "stretch": "Draw a real spaceship landing in the backyard, inviting the child on an interstellar adventure."
+    },
+    {
+        "base": "Sketch a cat sleeping on a windowsill.",
+        "stretch": "Illustrate a windowsill leading to a feline dreamland."
+    },
+    {
+        "base": "Draw a rainbow after a light rain shower.",
+        "stretch": "Create a rainbow bridge that guides travelers to a mythical land."
+    },
+    {
+        "base": "Illustrate a group of friends stargazing.",
+        "stretch": "Sketch a stargazing party attended by celestial beings."
+    },
+    {
+        "base": "Create a scene of kids playing in a park.",
+        "stretch": "Draw a park where children's imaginations manifest into real creatures."
+    },
+    {
+        "base": "Sketch a city skyline at sunset.",
+        "stretch": "Illustrate a city skyline where buildings transform into towering robots at sunset."
+    },
+    {
+        "base": "Create a scene of a dog playing fetch in a park.",
+        "stretch": "Draw a park where the thrown ball triggers magical events upon landing."
+    },
+    {
+        "base": "Illustrate a farmer working in a sunlit field.",
+        "stretch": "Sketch a field where each crop holds a unique secret or power."
+    },
+    {
+        "base": "Draw a simple house on a quiet street.",
+        "stretch": "Create a neighborhood where each house hides a magical portal."
+    },
+    {
+        "base": "Sketch a family camping in the wilderness.",
+        "stretch": "Illustrate a hidden world behind their camping site teeming with fantastical creatures."
+    },
+    {
+        "base": "Create a scene of kids flying kites in a field.",
+        "stretch": "Draw kites that serve as gateways to a sky kingdom."
+    },
+    {
+        "base": "Illustrate a group of friends having a picnic.",
+        "stretch": "Sketch a picnic where the food creates illusions or transforms into something unexpected."
+    },
+    {
+        "base": "Draw a simple lighthouse by the sea.",
+        "stretch": "Create a lighthouse that guides ships to a hidden realm beneath the waves."
+    },
+    {
+        "base": "Sketch a child drawing with colorful crayons.",
+        "stretch": "Illustrate crayon drawings coming to life in a vibrant and magical world."
+    },
+    {
+        "base": "Create a scene of children playing with paper airplanes.",
+        "stretch": "Draw paper airplanes that soar into a portal leading to a paper universe."
+    },
+    {
+        "base": "Illustrate a vibrant garden with various fruits and vegetables.",
+        "stretch": "Sketch a garden where each plant has a unique, mystical effect when harvested."
+    },
+    {
+        "base": "Draw a child blowing soap bubbles.",
+        "stretch": "Create soap bubbles that transport the blower to whimsical realms."
+    },
+    {
+        "base": "Sketch a cozy reading nook with a comfortable chair.",
+        "stretch": "Illustrate a reading nook that serves as a gateway to different storybook worlds."
+    },
+    {
+        "base": "Create a scene of kids building a sandcastle on the beach.",
+        "stretch": "Draw a sandcastle that transforms into a grand fortress during high tide."
+    },
+    {
+        "base": "Illustrate a cat chasing a butterfly in a garden.",
+        "stretch": "Sketch a garden where butterflies hold secrets to unlock hidden passages."
+    },
+    {
+        "base": "Draw a simple forest with a winding path.",
+        "stretch": "Create a forest where the path leads to different dimensions or time periods."
+    },
+    {
+        "base": "Sketch a group of friends having a water balloon fight.",
+        "stretch": "Illustrate water balloons that trigger playful and surprising effects upon impact."
+    },
+    {
+        "base": "Create a scene of kids playing with a model rocket.",
+        "stretch": "Draw a rocket that launches into space, uncovering an unknown celestial realm."
+    },
+    {
+        "base": "Illustrate a sunny day at a park with a playground.",
+        "stretch": "Sketch a playground where equipment grants access to fantastical adventures."
+    },
+    {
+        "base": "Draw a simple scene of a bird perched on a branch.",
+        "stretch": "Create a branch where birds communicate through ancient songs, holding mystical powers."
+    }
+]
