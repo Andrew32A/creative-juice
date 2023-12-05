@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ScrollReveal from 'scrollreveal';
 import { Link } from 'react-router-dom';
-import Logo from '../images/cj-logo.jpg';
+import Logo from '../images/updated-logo.jpg';
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);

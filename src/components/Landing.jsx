@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 import { Link } from 'react-router-dom';
-import Logo from '../images/cj-logo.jpg';
+import Logo from '../images/updated-logo.jpg';
 import Content from "./Content.jsx";
 
 const Home = () => {
@@ -61,7 +61,7 @@ const Home = () => {
               <p className="email-subtext text-[#3f3f3f] py-4 max-w-[700px] text-xs">We won't spam you. This is simply a fun experiment by artists, for artists.</p>
             </div>
             <div className='img-wrapper'>
-              <img className="w-[250px] mx-auto mt-1 ml-3" src={Logo} alt="Creative Juice Logo" />
+              <img className="w-[350px] mx-auto mt-1 ml-3" src={Logo} alt="Creative Juice Logo" />
             </div>
           </div>
         </div>
