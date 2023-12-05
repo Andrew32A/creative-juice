@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM amd64/node:lts-alpine
 
 RUN npm install -g nodemon
 
