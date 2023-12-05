@@ -1,3 +1,10 @@
+/*
+THIS SCRIPT WILL NOT WORK WITHOUT SPECIAL CONSIDERATION
+
+In order to get this script to work you must temporarily disable authentication and access control
+In the upload prompt route and remove the check for admin in the upload prompt controller.
+*/
+
 import {readFile} from 'fs/promises';
 const url = 'http://localhost:3000/api/prompts/new';
 
