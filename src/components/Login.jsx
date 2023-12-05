@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../images/cj-logo.jpg';
+import Logo from '../images/updated-logo.jpg';
 
 const Login = () => {
   const [identifier, setIdentifier] = useState('');
@@ -37,14 +37,14 @@ const Login = () => {
       <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img className="w-[3em] mx-auto" src={Logo} alt="Creative Juice Logo" />
-          <h1 style={{ fontFamily: 'DM Sans, sans-serif' }} className="mt-10 text-center text-4xl leading-9 tracking-tight drop-shadow-2xl font-bold text-[#3f3f3f]">Log in to Get the Juice!</h1>
+          <h1 style={{ fontFamily: 'DM Sans, sans-serif' }} className="mt-10 text-center text-4xl leading-9 tracking-tight drop-shadow-2xl text-[#3f3f3f]">Log in to Get the Juice!</h1>
         </div>
 
         <div className="mt-5 sm:mx-auto sm:w-full sm:max-w-sm">
           <form className="space-y-6" onSubmit={handleLogin}>
             <div>
               <label htmlFor="identifier" className="block text-sm font-medium leading-6 text-gray-900"></label>
-              <div className="mt-2">
+              <div className="mt-2 ">
                 <input
                   id="identifier"
                   name="identifier"
@@ -52,7 +52,7 @@ const Login = () => {
                   placeholder='  Email Address'
                   autoComplete="username"
                   required
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="border-[#003000] border-2 block w-full py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   value={identifier}
                   onChange={(e) => setIdentifier(e.target.value)}
                 />
@@ -74,7 +74,7 @@ const Login = () => {
                   placeholder='  Password'
                   autoComplete="current-password"
                   required
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="border-[#003000] border-2 block w-full py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
