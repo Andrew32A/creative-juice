@@ -114,8 +114,8 @@ const Signup = () => {
             <span className="text-sm text-gray-500">
               Already a member?{' '}
             </span>
-            <Link to="/login" className="nav-link ml-1 text-black transition duration-300 ease-in-out">
-              <span style={{ fontWeight: 'bold' }}>Log In</span>
+            <Link to="/login" className="nav-link text-black border-[#003000] border-2 px-4 py-1 ml-2 inline-flex items-center justify-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out">
+              <span>Log In</span>
             </Link>
           </div>
             </div>
