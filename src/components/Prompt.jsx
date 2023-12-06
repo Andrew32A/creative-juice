@@ -8,27 +8,15 @@ const Prompt = () => {
     });
 
     sr.reveal("p", {
-      origin: "top",
-      interval: 200,
-      delay: 200,
-    });
-
-    sr.reveal(".arrow", {
-      origin: "top",
-      interval: 200,
-      delay: 2500,
-    });
-
-    sr.reveal(".img-wrapper img", {
-      origin: "right",
+      origin: "left",
       interval: 200,
       delay: 400,
     });
 
-    sr.reveal(".email-input-wrapper, .email-subtext", {
+    sr.reveal(".submit-button-wrapper", {
       origin: "left",
       interval: 0,
-      delay: 1200,
+      delay: 1000,
     });
   }, []);
 
@@ -77,7 +65,7 @@ const Prompt = () => {
               <p className="mb-5 text-[#3f3f3f]">Draw a bumblebee.</p>
               <div style={{ border: "0.5px solid #3f3f3f" }}></div>
               <div
-                className="email-input-wrapper"
+                className="submit-button-wrapper"
                 style={{ display: "flex", alignItems: "center" }}
               >
                 <button className="text-black group border-[#003000] border-2 px-4 py-2 my-1 ml-[-2px] mt-5 flex items-center bg-[#BBF2E2] hover:bg-[#F2A7CA] transition duration-300 ease-in-out z-20">
