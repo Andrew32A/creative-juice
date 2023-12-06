@@ -18,9 +18,14 @@ It's super simple. You'll get a new simple prompt and a more detailed one every 
 
 ## How to run the project
 
-1. Clone this repo
-2. Run `npm install`
-3. Open new terminal and run `docker compose build`
-4. Open new terminal and run `docker compose up`
-5. Run `npm run start`
-6. Go to `localhost:3001` in your browser
+1. Clone this repo with `git clone https://github.com/Andrew32A/creative-juice.git`
+2. Run `npm install` then `npm run start` to start frontend
+3. Open new terminal and run `docker compose build` then `docker compose up` to start backend
+4. Go to `localhost:3001` in your browser
+
+## Credits
+
+Huge props to these amazing folks who made this project possible!!: <br> <br>
+Sharmaine [Frontend] https://github.com/sharmaineb <br>
+Chris [Backend] https://github.com/b3fr4nk <br>
+Marty [Backend] https://github.com/mxrtydluffy
