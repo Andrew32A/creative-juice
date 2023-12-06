@@ -52,7 +52,7 @@ const Login = () => {
                   placeholder='  Email Address'
                   autoComplete="username"
                   required
-                  className="border-[#003000] border-2 block w-full py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="border-[#003000] border block w-full p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   value={identifier}
                   onChange={(e) => setIdentifier(e.target.value)}
                 />
@@ -74,7 +74,7 @@ const Login = () => {
                   placeholder='  Password'
                   autoComplete="current-password"
                   required
-                  className="border-[#003000] border-2 block w-full py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="border-[#003000] border block w-full p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
