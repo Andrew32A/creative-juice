@@ -59,7 +59,7 @@ const NavBar = () => {
   return (
     <div style={{ fontFamily: "DM Sans, sans-serif" }}>
       <div
-        className={`z-50 fixed w-full flex justify-between items-center px-4 pt-3 transition-all duration-500 ease-in-out ${
+        className={`z-50 fixed w-full flex justify-between items-center px-4 pt-3 pb-3 transition-all duration-500 ease-in-out ${
           isScrolled
             ? "bg-opacity-80 backdrop-blur-sm shadow-lg"
             : "bg-[#F2E2C4]"
@@ -69,14 +69,14 @@ const NavBar = () => {
           <div></div>
         ) : (
           <Link
-          to="/"
-          className={`nav-link text-black border-[#003000] border-2 px-4 py-1 inline-flex items-center justify-center bg-[#F2E2C4] hover:bg-[#F2A7CA] transition duration-300 ease-in-out ${
-            location.pathname === "/" ? "active" : ""
-          }`}
-        >
-          <i className="ri-home-8-line"></i>
-          <span className="pl-2">Home</span>
-        </Link>
+            to="/"
+            className={`nav-link text-black border-[#003000] border-2 px-4 py-1 inline-flex items-center justify-center bg-[#F2E2C4] hover:bg-[#F2A7CA] transition duration-300 ease-in-out ${
+              location.pathname === "/" ? "active" : ""
+            }`}
+          >
+            <i className="ri-home-8-line"></i>
+            <span className="pl-2">Home</span>
+          </Link>
         )}
 
         <ul className="nav-wrapper hidden md:flex space-x-4 text-pink-300">
