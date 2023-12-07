@@ -16,16 +16,28 @@ This is for everybody who likes to make art! Take whatever part of the prompt fe
 
 It's super simple. You'll get a new simple prompt and a more detailed one every day. You get to choose which you do that day. Submit whatever you draw, and you'll get to see the drawings other artists created for that prompt (likewise, they'd get to see yours)! All the drawings are anonymous.
 
-## How to run the project
+## How to run the project locally
 
 1. Clone this repo with `git clone https://github.com/Andrew32A/creative-juice.git`
 2. Run `npm install` then `npm run start` to start frontend
 3. Open new terminal and run `docker compose build` then `docker compose up` to start backend
 4. Go to `localhost:3001` in your browser
 
+## Known issues
+
+Due to having limited time and limited budget to complete this project, there are some known issues that we were not able to fix in time. These issues are listed below:
+
+- Upload feature is incomplete
+- User can go to /prompts without being logged in
+- Backend isn't deployed on live version, only works locally
+- About section below landing page isn't complete
+
 ## Credits
 
-Huge props to these amazing folks who made this project possible!!: <br> <br>
-Sharmaine [Frontend] https://github.com/sharmaineb <br>
-Chris [Backend] https://github.com/b3fr4nk <br>
-Marty [Backend] https://github.com/mxrtydluffy
+Huge props to these amazing folks who made this project possible!!:
+| Name | Roles | GitHub Profile |
+|----------|-----------------------|-----------------------------------------------------|
+| Andrew | PM/Frontend/Backend | [Andrew32A](https://github.com/Andrew32A) |
+| Sharmaine| Frontend | [sharmaineb](https://github.com/sharmaineb) |
+| Chris | Backend | [b3fr4nk](https://github.com/b3fr4nk) |
+| Marty | Backend | [mxrtydluffy](https://github.com/mxrtydluffy) |
