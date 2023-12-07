@@ -32,6 +32,16 @@ Due to having limited time and limited budget to complete this project, there ar
 - Backend isn't deployed on live version, only works locally
 - About section below landing page isn't complete
 
+## Links
+
+| Name              | Link                                                                                                                                                                                                             |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Live Site         | [Creative Juice](https://creative-juice.netlify.app/)                                                                                                                                                            |
+| Figma [Mobile]    | [Figma](https://www.figma.com/file/VYHUEVD1cwYS1XXNNKZ2Ep/Creative-Juice?type=design&node-id=0-1&mode=design&t=ccflXrLu1UYAEt0f-0)                                                                               |
+| Figma [Desktop]   | [Figma](https://www.figma.com/file/X5qciLaIjYk7ffIV9c7Hn8/Untitled?type=design&mode=design&t=y9vN2e3dkdR8mieJ-0)                                                                                                 |
+| PRD w/ Wireframes | [PRD](https://docs.google.com/document/d/1H6xCoMElMkV-KQFkRMjWVVuvTjCaiJ40g8CnOshnYAQ/edit#heading=h.gjdgxs)                                                                                                     |
+| Google Analytics  | [Analytics](https://analytics.google.com/analytics/web/?utm_source=marketingplatform.google.com&utm_medium=et&utm_campaign=marketingplatform.google.com%2Fabout%2Fanalytics%2F#/p417319839/reports/reportinghub) |
+
 ## Credits
 
 Huge props to these amazing folks who made this project possible!!:
