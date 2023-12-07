@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import ScrollReveal from "scrollreveal";
 import { Link, useLocation } from "react-router-dom";
-import Logo from "../images/updated-logo.jpg";
 
 const NavBar = () => {
   const location = useLocation();
