@@ -25,18 +25,21 @@ const Prompt = () => {
       delay: 1000,
     });
 
-    const fetchDailyPrompt = () => {
-      try {
-        const randomPrompt =
-        prompts.prompts[Math.floor(Math.random() * prompts.prompts.length)];
-        setDailyPrompt(randomPrompt);
-      } catch (error) {
-        console.error("Error fetching daily prompt:", error);
-      }
-    };
-
-    fetchDailyPrompt();
+    const today = new Date().toLocaleDateString();
+    const dateHash = hashCode(today);
+    const promptIndex = Math.abs(dateHash) % prompts.prompts.length;
+    const selectedPrompt = prompts.prompts[promptIndex];
+    setDailyPrompt(selectedPrompt);
   }, []);
+
+  function hashCode(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+      const char = str.charCodeAt(i);
+      hash = (hash << 5) - hash + char;
+    }
+    return hash;
+  }
 
   return (
     <>
