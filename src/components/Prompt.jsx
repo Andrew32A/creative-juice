@@ -1,7 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import ScrollReveal from "scrollreveal";
+import prompts from "./experimental-prompts.json";
 
 const Prompt = () => {
+  const [dailyPrompt, setDailyPrompt] = useState({
+    base: "",
+    stretch: "",
+  });
+
   useEffect(() => {
     const sr = ScrollReveal({
       reset: false,
@@ -18,6 +24,18 @@ const Prompt = () => {
       interval: 0,
       delay: 1000,
     });
+
+    const fetchDailyPrompt = () => {
+      try {
+        const randomPrompt =
+        prompts.prompts[Math.floor(Math.random() * prompts.prompts.length)];
+        setDailyPrompt(randomPrompt);
+      } catch (error) {
+        console.error("Error fetching daily prompt:", error);
+      }
+    };
+
+    fetchDailyPrompt();
   }, []);
 
   return (
@@ -52,17 +70,14 @@ const Prompt = () => {
               >
                 Play 🎉
               </h2>
-              <p className="text-[#3f3f3f]">
-                Draw a bumblebee helicopter zooming through a dorest of candy
-                canes.
-              </p>
+              <p className="text-[#3f3f3f]">{dailyPrompt.base}</p>
               <h2
                 className="mt-5"
                 style={{ fontWeight: "bold", fontSize: "17px" }}
               >
                 Do Something ⭐️
               </h2>
-              <p className="mb-5 text-[#3f3f3f]">Draw a bumblebee.</p>
+              <p className="mb-5 text-[#3f3f3f]">{dailyPrompt.stretch}</p>
               <div style={{ border: "0.5px solid #3f3f3f" }}></div>
               <div
                 className="submit-button-wrapper"
